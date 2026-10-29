@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Home - Cross-Lingual Prompt-Tuned Large Language Models for NER in Indian Languages{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Cross-Lingual Prompt-Tuned Large Language Models for NER in Indian Languages</h1>
+    <p>An empirical implementation of parameter-efficient cross-lingual Low-Rank Adaptation (LoRA r=8) using XLM-RoBERTa on the AI4Bharat Naamapadam dataset. Final verified LoRA-r8 recovers 98.36% of full fine-tuning performance (0.7668 F1 vs. 0.7796) while updating only 0.4780% of model parameters under a 500-shot setting.</p>
+</div>
+
+<div class="stat-grid">
+    <div class="stat-card">
+        <div class="val">0.7668</div>
+        <div class="lbl">Proposed LoRA-r8 F1 (500-shot)</div>
+    </div>
+    <div class="stat-card">
+        <div class="val">0.9290</div>
+        <div class="lbl">Proposed LoRA-r8 Accuracy</div>
+    </div>
+    <div class="stat-card">
+        <div class="val">0.7796</div>
+        <div class="lbl">XLM-R Full Fine-Tune F1</div>
+    </div>
+    <div class="stat-card">
+        <div class="val">0.4780%</div>
+        <div class="lbl">Trainable Param Budget</div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Project Summary & Key Findings</h2>
+    <p>Extremely low-resource languages like Telugu suffer from severe data scarcity in Named Entity Recognition (NER). Standard full fine-tuning requires updating all 277M parameters of XLM-R, which is computationally expensive and prone to overfitting on small target subsets. In this project, we implement <b>Low-Rank Adaptation (LoRA r=8)</b> with target module expansion <code>["query", "key", "value", "dense"]</code>, 10% linear warmup, and multilingual source transfer.</p>
+    <ul>
+        <li><b>Parameter Efficiency:</b> Updates only <b>1,332,487 parameters (0.4780%)</b> vs 278M in full fine-tuning.</li>
+        <li><b>Near-Parity Performance:</b> Reaches <b>0.7668 F1</b> (Peak Seed 2024: <b>0.7734 F1</b>), recovering <b>98.36%</b> of full fine-tuning F1.</li>
+        <li><b>Multilingual Source Advantage:</b> Pre-tuning on combined English, Hindi, Tamil, and Malayalam data yields strong cross-lingual transfer supervision to low-resource Telugu.</li>
+    </ul>
+    <div style="margin-top: 20px;">
+        <a href="/results" class="btn" style="text-decoration: none; margin-right: 10px;">Explore Results</a>
+        <a href="/demo" class="btn" style="background-color: var(--secondary); text-decoration: none;">Try Live Demo</a>
+    </div>
+</div>
+{% endblock %}

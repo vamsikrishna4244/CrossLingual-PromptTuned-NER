@@ -1,0 +1,5 @@
+Model / Setting,PER F1,ORG F1,LOC F1,Macro-F1
+XLM-R Full FT (Hindi Zero-Shot),0.8124,0.741,0.7853,0.7796
+mBERT Full FT (Hindi Zero-Shot),0.684,0.612,0.6508,0.6489
+LoRA-r16 Proposed Model,0.442,0.398,0.437,0.4772
+Soft Prompt Tuning Model,0.0,0.0,0.0,0.0

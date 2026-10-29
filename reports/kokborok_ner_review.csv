@@ -1,0 +1,689 @@
+﻿Pair_ID,English_Sentence,Kokborok_Sentence,English_Entity,Entity_Type,Projected_Kokborok_Entity,Confidence_Score,Review_Status
+1,Tripura signs MoA with Tata Technologies.,Tata Technoligies bai Tripura kaisa MoA gosimung rwlaikha.,Tripura,ORG,Tripura,0.6017,FLAGGED_FOR_MANUAL_REVIEW
+1,Tripura signs MoA with Tata Technologies.,Tata Technoligies bai Tripura kaisa MoA gosimung rwlaikha.,MoA,ORG,MoA,0.8905,FLAGGED_FOR_MANUAL_REVIEW
+1,Tripura signs MoA with Tata Technologies.,Tata Technoligies bai Tripura kaisa MoA gosimung rwlaikha.,Tata Technologies,ORG,Tata,0.8957,FLAGGED_FOR_MANUAL_REVIEW
+2,100 Bangladeshis arrested at Agartala station.,Agartala Station-o Khoroksara Bangladeshirok romjak kha.,Agartala,LOC,Agartala,0.8764,FLAGGED_FOR_MANUAL_REVIEW
+2,100 Bangladeshis arrested at Agartala station.,Agartala Station-o Khoroksara Bangladeshirok romjak kha.,Bangladeshis,PER,Bangladeshirok,0.63,FLAGGED_FOR_MANUAL_REVIEW
+2,100 Bangladeshis arrested at Agartala station.,Agartala Station-o Khoroksara Bangladeshirok romjak kha.,station,ORG,Station-o,0.81,FLAGGED_FOR_MANUAL_REVIEW
+3,Heavy rains cause floods in Tripura.,Belai watwi wama bagwi Tripurao twilom kha.,Tripura,LOC,Tripurao,0.8978,FLAGGED_FOR_MANUAL_REVIEW
+4,Tripura to upgrade 19 ITIs with Tata.,Tripura Tata bai khwlai khungchichuku ITIs phuwarnai.,Tripura,LOC,Tripura,0.8977,FLAGGED_FOR_MANUAL_REVIEW
+4,Tripura to upgrade 19 ITIs with Tata.,Tripura Tata bai khwlai khungchichuku ITIs phuwarnai.,Ta,PER,Tata,0.8674,FLAGGED_FOR_MANUAL_REVIEW
+4,Tripura to upgrade 19 ITIs with Tata.,Tripura Tata bai khwlai khungchichuku ITIs phuwarnai.,ITIs,ORG,ITIs,0.81,FLAGGED_FOR_MANUAL_REVIEW
+5,Kailashahar curfew lifted after five days.,Kailashahar-o salba niyagolo curfew rosajakkha.,Kailashah,PER,Kailashahar-o,0.8585,FLAGGED_FOR_MANUAL_REVIEW
+6,Farmers await flood relief in Bilonia.,Bilonia-o Twitorma ni yokmung ni bagwi hukbar khwlainairok naisnglaijak.,ilonia,LOC,Bilonia-o ni ni,0.891,FLAGGED_FOR_MANUAL_REVIEW
+7,Tripura hosts 38th North-East Youth Festival.,Wai thamchichar North-east Sikla Ter Tripura songchakha.,Tripura,LOC,Tripura,0.8812,FLAGGED_FOR_MANUAL_REVIEW
+7,Tripura hosts 38th North-East Youth Festival.,Wai thamchichar North-east Sikla Ter Tripura songchakha.,North-East,PER,North-east,0.63,FLAGGED_FOR_MANUAL_REVIEW
+7,Tripura hosts 38th North-East Youth Festival.,Wai thamchichar North-east Sikla Ter Tripura songchakha.,Youth,PER,Ter,0.35,FLAGGED_FOR_MANUAL_REVIEW
+7,Tripura hosts 38th North-East Youth Festival.,Wai thamchichar North-east Sikla Ter Tripura songchakha.,Festival,PER,Tripura,0.35,FLAGGED_FOR_MANUAL_REVIEW
+8,CM Manik Saha announces â‚¹3800 crore investments.,CM Manik Saha 3800 rwjaknok rangmari swbainani sakwlaikha.,CM Manik Saha,ORG,CM Manik Saha,0.8982,FLAGGED_FOR_MANUAL_REVIEW
+9,10 Rohingyas caught with fake Indian IDs.,Chengra Indian Sinimung bai khorokchi Rohingyarok romjakkha.,Rohingyas,PER,Rohingyarok,0.63,FLAGGED_FOR_MANUAL_REVIEW
+9,10 Rohingyas caught with fake Indian IDs.,Chengra Indian Sinimung bai khorokchi Rohingyarok romjakkha.,Indian,PER,Indian,0.63,FLAGGED_FOR_MANUAL_REVIEW
+9,10 Rohingyas caught with fake Indian IDs.,Chengra Indian Sinimung bai khorokchi Rohingyarok romjakkha.,IDs,PER,Rohingyarok,0.35,FLAGGED_FOR_MANUAL_REVIEW
+10,Agartala celebrates vibrant Sindoor Khela festival.,Sindoor Khela Ter Agartalao bo thongthokthok khe palailaikha.,gartala,LOC,Agartalao,0.8661,FLAGGED_FOR_MANUAL_REVIEW
+10,Agartala celebrates vibrant Sindoor Khela festival.,Sindoor Khela Ter Agartalao bo thongthokthok khe palailaikha.,Sindoor Khel,LOC,Sindoor khe,0.6454,FLAGGED_FOR_MANUAL_REVIEW
+10,Agartala celebrates vibrant Sindoor Khela festival.,Sindoor Khela Ter Agartalao bo thongthokthok khe palailaikha.,Khela,PER,Khela khe,0.63,FLAGGED_FOR_MANUAL_REVIEW
+11,Tripura signs MoA with Tata Technologies.,Tata Technoligies bai Tripura kaisa MoA gosimung rwlaikha.,Tripura,ORG,Tripura,0.6017,FLAGGED_FOR_MANUAL_REVIEW
+11,Tripura signs MoA with Tata Technologies.,Tata Technoligies bai Tripura kaisa MoA gosimung rwlaikha.,MoA,ORG,MoA,0.8905,FLAGGED_FOR_MANUAL_REVIEW
+11,Tripura signs MoA with Tata Technologies.,Tata Technoligies bai Tripura kaisa MoA gosimung rwlaikha.,Tata Technologies,ORG,Tata,0.8957,FLAGGED_FOR_MANUAL_REVIEW
+12,100 Bangladeshis arrested at Agartala station.,Agartala Station-o Khoroksara Bangladeshirok romjak kha.,Agartala,LOC,Agartala,0.8764,FLAGGED_FOR_MANUAL_REVIEW
+12,100 Bangladeshis arrested at Agartala station.,Agartala Station-o Khoroksara Bangladeshirok romjak kha.,Bangladeshis,PER,Bangladeshirok,0.63,FLAGGED_FOR_MANUAL_REVIEW
+12,100 Bangladeshis arrested at Agartala station.,Agartala Station-o Khoroksara Bangladeshirok romjak kha.,station,ORG,Station-o,0.81,FLAGGED_FOR_MANUAL_REVIEW
+13,Heavy rains cause floods in Tripura.,Belai watwi wama bagwi Tripurao twilom kha.,Tripura,LOC,Tripurao,0.8978,FLAGGED_FOR_MANUAL_REVIEW
+14,Tripura to upgrade 19 ITIs with Tata.,Tripura Tata bai khwlai khungchichuku ITIs phuwarnai.,Tripura,LOC,Tripura,0.8977,FLAGGED_FOR_MANUAL_REVIEW
+14,Tripura to upgrade 19 ITIs with Tata.,Tripura Tata bai khwlai khungchichuku ITIs phuwarnai.,Ta,PER,Tata,0.8674,FLAGGED_FOR_MANUAL_REVIEW
+14,Tripura to upgrade 19 ITIs with Tata.,Tripura Tata bai khwlai khungchichuku ITIs phuwarnai.,ITIs,ORG,ITIs,0.81,FLAGGED_FOR_MANUAL_REVIEW
+15,Kailashahar curfew lifted after five days.,Kailashahar-o salba niyagolo curfew rosajakkha.,Kailashah,PER,Kailashahar-o,0.8585,FLAGGED_FOR_MANUAL_REVIEW
+16,Farmers await flood relief in Bilonia.,Bilonia-o Twitorma ni yokmung ni bagwi hukbar khwlainairok naisnglaijak.,ilonia,LOC,Bilonia-o ni ni,0.891,FLAGGED_FOR_MANUAL_REVIEW
+17,Tripura hosts 38th North-East Youth Festival.,Wai thamchichar North-east Sikla Ter Tripura songchakha.,Tripura,LOC,Tripura,0.8812,FLAGGED_FOR_MANUAL_REVIEW
+17,Tripura hosts 38th North-East Youth Festival.,Wai thamchichar North-east Sikla Ter Tripura songchakha.,North-East,PER,North-east,0.63,FLAGGED_FOR_MANUAL_REVIEW
+17,Tripura hosts 38th North-East Youth Festival.,Wai thamchichar North-east Sikla Ter Tripura songchakha.,Youth,PER,Ter,0.35,FLAGGED_FOR_MANUAL_REVIEW
+17,Tripura hosts 38th North-East Youth Festival.,Wai thamchichar North-east Sikla Ter Tripura songchakha.,Festival,PER,Tripura,0.35,FLAGGED_FOR_MANUAL_REVIEW
+18,CM Manik Saha announces â‚¹3800 crore investments.,CM Manik Saha 3800 rwjaknok rangmari swbainani sakwlaikha.,CM Manik Saha,ORG,CM Manik Saha,0.8982,FLAGGED_FOR_MANUAL_REVIEW
+19,10 Rohingyas caught with fake Indian IDs.,Chengra Indian Sinimung bai khorokchi Rohingyarok romjakkha.,Rohingyas,PER,Rohingyarok,0.63,FLAGGED_FOR_MANUAL_REVIEW
+19,10 Rohingyas caught with fake Indian IDs.,Chengra Indian Sinimung bai khorokchi Rohingyarok romjakkha.,Indian,PER,Indian,0.63,FLAGGED_FOR_MANUAL_REVIEW
+19,10 Rohingyas caught with fake Indian IDs.,Chengra Indian Sinimung bai khorokchi Rohingyarok romjakkha.,IDs,PER,Rohingyarok,0.35,FLAGGED_FOR_MANUAL_REVIEW
+20,Agartala celebrates vibrant Sindoor Khela festival.,Sindoor Khela Ter Agartalao bo thongthokthok khe palailaikha.,gartala,LOC,Agartalao,0.8661,FLAGGED_FOR_MANUAL_REVIEW
+20,Agartala celebrates vibrant Sindoor Khela festival.,Sindoor Khela Ter Agartalao bo thongthokthok khe palailaikha.,Sindoor Khel,LOC,Sindoor khe,0.6454,FLAGGED_FOR_MANUAL_REVIEW
+20,Agartala celebrates vibrant Sindoor Khela festival.,Sindoor Khela Ter Agartalao bo thongthokthok khe palailaikha.,Khela,PER,Khela khe,0.63,FLAGGED_FOR_MANUAL_REVIEW
+21,Tripura farmers embrace organic farming techniques.,Tripurani Hukbar khwlainairok Bithi kwrwi Hukbar khwlainani lamano hamjakmung phunuk kha.,Tripura,LOC,Tripurani,0.814,FLAGGED_FOR_MANUAL_REVIEW
+22,Government launches app for real-time market prices.,Hatini bwswk morokmung no soijora sina bagwi Haphang Kaisa App tikhlaikha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+23,Dragon fruit cultivation boosts farmer incomes.,Dragon bwthai kaimani Hukbar khwlainaini ajimung kwbang khwlaio.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+24,Training programs enhance sustainable farming skills.,Phwrwngmung panda teibo kaham khwlainani tikinai hukbarni rwngmung.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+25,Farmers protest for fair minimum support prices.,Hukbar khwlainairik Soi mojomo Morokmung ni bagwi choba khwlaikha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+26,New irrigation systems benefit West Tripura farmers.,Kwtal twi rwmani bisingtwi Salthang Tripurani Hukbar khwlainairok hamchakha.,West Tripura,LOC,UNALIGNED,0.1995,FLAGGED_FOR_MANUAL_REVIEW
+27,Rubber growers seek better subsidy from government.,Rubber kainairok kaham khaikhwlaimung ni bagwi rutukjak Haphangni thani.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+28,Farmers discuss pest control techniques in workshop.,Tangbwtango Hukbar khwlainairok yongsakuksa no kasuna bagwi kok chaplaikha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+29,Tripura agriculture department distributes free seeds.,Tripura Hukbar Bedek Bwchwlwi magwnang bakkha.,Tripura,LOC,Tripura,0.8946,FLAGGED_FOR_MANUAL_REVIEW
+30,Organic vegetables fetch high prices in Agartala.,Agratalao Bithi kwrwi muikwthwng belaino morok.,gartala,LOC,UNALIGNED,0.1654,FLAGGED_FOR_MANUAL_REVIEW
+31,My son is improving in mathematics this month.,O talo Ani Sajla Angko-o kaham khwlaikha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+32,She needs help with her science homework again.,Bo chubachu nangwi tongkha bini scienceni nokni khwlaithanio teiwaisa.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+33,We are planning to enroll him in coaching.,Chwng chongwi tongo bono phwrwngmathaio mung boksai rwnani.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+34,His handwriting has become better this semester.,Bini swimani kaham wngkha o semestero.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+35,Our daughter topped her class in English.,Chini sajwk kwplai khwlaikha bini English swrwngmao.,English,PER,English,0.63,FLAGGED_FOR_MANUAL_REVIEW
+36,He struggles with time management during exams.,Bo amjukmung jorao jorano twiwi soikhe naikolmanliya belaino jwngjalo kwlaikha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+37,They assigned too much homework this weekend.,O lenglamao hatio borok belai kwbangma nokni khwlaithai samung rwkha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+38,Her performance improved after tuition last month.,Bini laithangjak talni swrwngmung ni simi samungrok kaham wngkha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+39,I'm worried about his low attendance rate.,Ang belaino wanajak belaino kisa manjaknairok ni bagwi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+40,We want to shift him to a hostel.,Chwng bono Hostel ose rohorsinai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+41,Tripura farmers embrace organic farming techniques.,Tripurani Hukbar khwlainairok Bithi kwrwi Hukbar khwlainani lamano hamjakmung phunuk kha.,Tripura,LOC,Tripurani,0.814,FLAGGED_FOR_MANUAL_REVIEW
+42,Government launches app for real-time market prices.,Hatini bwswk morokmung no soijora sina bagwi Haphang Kaisa App tikhlaikha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+43,Dragon fruit cultivation boosts farmer incomes.,Dragon bwthai kaimani Hukbar khwlainaini ajimung kwbang khwlaio.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+44,Training programs enhance sustainable farming skills.,Phwrwngmung panda teibo kaham khwlainani tikinai hukbarni rwngmung.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+45,Farmers protest for fair minimum support prices.,Hukbar khwlainairik Soi mojomo Morokmung ni bagwi choba khwlaikha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+46,New irrigation systems benefit West Tripura farmers.,Kwtal twi rwmani bisingtwi Salthang Tripurani Hukbar khwlainairok hamchakha.,West Tripura,LOC,UNALIGNED,0.1995,FLAGGED_FOR_MANUAL_REVIEW
+47,Rubber growers seek better subsidy from government.,Rubber kainairok kaham khaikhwlaimung ni bagwi rutukjak Haphangni thani.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+48,Farmers discuss pest control techniques in workshop.,Tangbwtango Hukbar khwlainairok yongsakuksa no kasuna bagwi kok chaplaikha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+49,Tripura agriculture department distributes free seeds.,Tripura Hukbar Bedek Bwchwlwi magwnang bakkha.,Tripura,LOC,Tripura,0.8946,FLAGGED_FOR_MANUAL_REVIEW
+50,Organic vegetables fetch high prices in Agartala.,Agratalao Bithi kwrwi muikwthwng belaino morok.,gartala,LOC,UNALIGNED,0.1654,FLAGGED_FOR_MANUAL_REVIEW
+51,My son is improving in mathematics this month.,O talo Ani Sajla Angko-o kaham khwlaikha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+52,She needs help with her science homework again.,Bo chubachu nangwi tongkha bini scienceni nokni khwlaithanio teiwaisa.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+53,We are planning to enroll him in coaching.,Chwng chongwi tongo bono phwrwngmathaio mung boksai rwnani.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+54,His handwriting has become better this semester.,Bini swimani kaham wngkha o semestero.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+55,Our daughter topped her class in English.,Chini sajwk kwplai khwlaikha bini English swrwngmao.,English,PER,English,0.63,FLAGGED_FOR_MANUAL_REVIEW
+56,He struggles with time management during exams.,Bo amjukmung jorao jorano twiwi soikhe naikolmanliya belaino jwngjalo kwlaikha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+57,They assigned too much homework this weekend.,O lenglamao hatio borok belai kwbangma nokni khwlaithai samung rwkha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+58,Her performance improved after tuition last month.,Bini laithangjak talni swrwngmung ni simi samungrok kaham wngkha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+59,I'm worried about his low attendance rate.,Ang belaino wanajak belaino kisa manjaknairok ni bagwi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+60,We want to shift him to a hostel.,Chwng bono Hostel ose rohorsinai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+61,"Good morning, sir.","Phung kaham, boromgwnang.",N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+62,Good morning! How can I help you today?,Phung kaham! Nono tini ang bahaikhe chubaimang?,How,PER,Nono,0.35,FLAGGED_FOR_MANUAL_REVIEW
+63,"Student,I have a doubt regarding today’s topic.","Swrwngnairok, Tini ni Swrwngmao Ani kaisa swngmung tongo.",N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+64,Sure! What is your doubt?,Soino! Tamo nini swngmung.,What,PER,Tamo,0.35,FLAGGED_FOR_MANUAL_REVIEW
+65,You're welcome! Let me know if you need any further assistance.,Nono lamsokjago! Sadi ano nini bagwi ang tamo khwlai man.,Let,PER,Sadi,0.35,FLAGGED_FOR_MANUAL_REVIEW
+66,Thank you for the information!,Hamabai nono samani bagwi!,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+67,What payment methods do you accept?,Nwng biyangtwi rang yachak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+68,Hello! Do you have any discounts available?,Takhuk! Nini oro Khaimari twda tong?,Do,PER,Nini,0.35,FLAGGED_FOR_MANUAL_REVIEW
+69,That makes sense! When is our next quiz?,Abose kokgothogo! Chini teiwaisa  swngmung buphuru wngnai?,When,PER,Chini,0.35,FLAGGED_FOR_MANUAL_REVIEW
+70,It is scheduled for next Monday.,Phainai Tang salose a jora khwlaijakha.,Monday,PER,a,0.63,FLAGGED_FOR_MANUAL_REVIEW
+71,Will it be multiple-choice or descriptive?,Abo Saijaknai eba Sukrubjaknai phano wngwi mano.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+72,It will be a mix of both.,Abo kwnwino saphuljak wngnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+73,"Thank you! Also, can you suggest a good book?",Hambai nono! Nwng Kaisa bijap kaham ni mung bo saiwi mano?,Also,PER,Nwng,0.35,FLAGGED_FOR_MANUAL_REVIEW
+74,Yes! We are offering a 10% discount on all products this week.,I! O hatio Chwng 10% marini khaikhwlaijak khe bebak manwino rwi tongo.,We,PER,O,0.35,FLAGGED_FOR_MANUAL_REVIEW
+75,That’s great! What are your best-selling items?,Belaino Chamani kok! tamo kaham phalmani manwirok tong norokni,What,PER,kok!,0.35,FLAGGED_FOR_MANUAL_REVIEW
+76,Do you have any special offers on new arrivals?,Kwtal manwio mungsaswk khaikhwlaimari nini oro twda tong?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+77,Can I return a product if I am not satisfied?,Ang hamjakya khe manwino kiphilda rwi manphino?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+78,How can I track my order?,Ani nahama manwi boro tong ang sai mannai?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+79,Got it! Can I submit my assignment online?,Saimankha! Ang ani assignmentno online da rwi mano?,Can,PER,ani,0.35,FLAGGED_FOR_MANUAL_REVIEW
+80,"Yes, please upload it to Google Classroom.",I! abono Google Classroom o upload khwlainani koijao.,Google Classroom,ORG,Google Classroom o,0.8885,FLAGGED_FOR_MANUAL_REVIEW
+81,Good morning! How are you?,Phung kaham! Nwng bahai tong?,How,PER,Nwng,0.35,FLAGGED_FOR_MANUAL_REVIEW
+82,Good morning! I’m fine. How about you?,Phung kaham! Ang kaham no. Nwngle bahai?,I’m,PER,Ang,0.35,FLAGGED_FOR_MANUAL_REVIEW
+82,Good morning! I’m fine. How about you?,Phung kaham! Ang kaham no. Nwngle bahai?,How,PER,kaham,0.35,FLAGGED_FOR_MANUAL_REVIEW
+83,"I’m doing well, thank you.","Ang belaino kaham, Hambai.",N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+84,Did you have breakfast?,Nwng Phungni chamungda chakha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+85,"Yes, I did. What about you?","I, khwlaikha. Nwngle khwlaikhada?",What,PER,Nwngle,0.35,FLAGGED_FOR_MANUAL_REVIEW
+86,Not yet. I’m planning to have some toast.,Ihi khwlaiyakhu. Ang chongwi tongo kisa bon chanani.,I’m,PER,Ang,0.35,FLAGGED_FOR_MANUAL_REVIEW
+87,That sounds good! What are your plans for today?,Ao belaino khwnathok! Tini nini tamo chongjak tong?,What,PER,khwnathok!,0.35,FLAGGED_FOR_MANUAL_REVIEW
+88,I have some work to finish and then I’ll relax.,Ani kisa samung pairwna nango tei aboni ulose ang lenglanai.,I’ll,PER,ulose,0.35,FLAGGED_FOR_MANUAL_REVIEW
+89,That’s nice. Let’s meet for coffee in the evening.,Belaino kaham. Phaidi sarigo malai coffee nunglai anw.,Let’s,PER,Phaidi,0.35,FLAGGED_FOR_MANUAL_REVIEW
+90,Sure! What time?,Ako! Bo jorao?,What,PER,Bo,0.35,FLAGGED_FOR_MANUAL_REVIEW
+91,How about 5 PM?,Sarik ni Dam Ba o tamo hwn?,PM,PER,o,0.35,FLAGGED_FOR_MANUAL_REVIEW
+92,That works for me. Where should we meet?,Ani jora tongo. Bo thaio chwng malainai?,Where,PER,Bo,0.35,FLAGGED_FOR_MANUAL_REVIEW
+93,Let’s meet at the usual café.,Phaidi kaisa haino Café malai lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+94,Sounds good! See you then.,Kaham kok! Ako nuklai anw.,See,PER,Ako,0.35,FLAGGED_FOR_MANUAL_REVIEW
+95,See you! Have a great day.,Nuklai anw! Sal kaham nini bagwi.,Have,PER,Sal,0.35,FLAGGED_FOR_MANUAL_REVIEW
+96,You too!,nono bo!,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+97,Hey! How was your day?,Oi! Tinini sal bahai nini?,How,PER,Tinini,0.35,FLAGGED_FOR_MANUAL_REVIEW
+98,"It was good. A bit busy, though.","Abo belaino kaham. Kisisa pailaiya,phano.",N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+99,"Yeah, same here. Work was hectic.","I, Ahaino, Samung kisa pailaiyano.",Work,PER,Samung,0.35,FLAGGED_FOR_MANUAL_REVIEW
+100,That’s life! Want to go for a walk?,Abose langma! Kisa himna bagwi thangnaida?,Want,PER,langma!,0.35,FLAGGED_FOR_MANUAL_REVIEW
+101,Sure! Let’s go.,I! Himdi.,Let’s,PER,I!,0.35,FLAGGED_FOR_MANUAL_REVIEW
+102,"By the way, did you watch the new movie?","Ako do, Nwng kwtal Toke da naikha?",N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+103,Not yet. Is it good?,Ihi tabuk buya. Kahamda abo?,Is,PER,buya.,0.35,FLAGGED_FOR_MANUAL_REVIEW
+104,Yes! You should watch it this weekend.,I! O hatio nwng naidi abo.,You,PER,O,0.63,FLAGGED_FOR_MANUAL_REVIEW
+105,I will. Thanks for the recommendation!,Ang nainai. Hambai sama bagwi!,Thanks,PER,nainai.,0.35,FLAGGED_FOR_MANUAL_REVIEW
+106,No problem!,kok kwrwi!,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+107,"Alright, I should get going now.","Do ako, Ang tabukno thana nangnai.",N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+108,Okay! Take care.,Ako! Kaham tongdi.,Take,PER,Kaham,0.35,FLAGGED_FOR_MANUAL_REVIEW
+109,You too! See you tomorrow.,Nwng bo! Khwna nuklai anw.,See,PER,Khwna,0.35,FLAGGED_FOR_MANUAL_REVIEW
+110,Good morning! How was your night?,Phung kaham! Hor bahai wngkha nini?,How,PER,Hor,0.35,FLAGGED_FOR_MANUAL_REVIEW
+111,Did you sleep well?,Nwng kaham kheno thukhana ble?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+112,What are your plans for today?,Tini nwng tamo khwlaina chongjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+113,Let's grab a coffee sometime.,Phaidi coffee waisa nung nalai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+114,"It’s a beautiful day, isn’t it?",Tini sal belai kaham! Abo haiyada?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+115,I hope you’re having a great day.,Ang kha khwlaio tinini sal nini kaham no wngkhana.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+116,Could you help me with this?,Nwng ano omo haikhe chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+117,"Excuse me, where is the nearest ATM?","Nakardi, Ganani ATM boro?",ATM,PER,ATM,0.63,FLAGGED_FOR_MANUAL_REVIEW
+118,What time does the store open?,Bojorao manwi tonmani thai khulok?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+119,How much does this cost?,Omoni morok ma bwswk?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+120,Can I get a discount on this?,Omo-o Ano khaikhwlai da rwi mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+121,Do you accept credit cards?,Nwng Credit card da yachak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+122,Can I return this item if it doesn’t fit?,Omo Ojun wngyakhe Ang kiphilda rwi manphino?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+123,Let’s meet at the café in the evening.,Phaidi Cafe o malai lai anw Sarigo.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+124,What would you like to eat?,Nwng tamo chana hamjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+125,I’ll have a sandwich and some coffee.,Ang Sandwich tei Coffee nawanw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+126,"Could you pass me the salt, please?",Do kisa  nwng  ano Somda rohor mano ?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+127,Do you have any recommendations for dinner?,Nini Mungsa swk sanada tong horni chamungni bagwi?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+128,The weather is really nice today.,Tini salkubuino  belaino kwchang.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+129,It looks like it might rain later.,Abo tamo watwi wana naima hai wngwi tongkha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+130,Did you watch the game last night?,Miya horo nwng thwngmungda naikha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+131,That movie was amazing! You should watch it.,A toke belaino naithok! Nwngbo naina nango abo.,You,PER,Nwngbo,0.35,FLAGGED_FOR_MANUAL_REVIEW
+132,I need to finish some work before going out.,Phataro ongkhorna swkang ani samung pairwna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+133,Do you have any weekend plans?,O hatio nini mungsawk chongjakrok da tong?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+134,Good evening! How was your day?,Sarik kaham! Nini tinini sal bahai wngkha?,How,PER,Nini,0.35,FLAGGED_FOR_MANUAL_REVIEW
+135,What time do you usually wake up?,Bo jorarogo nwng bachajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+136,I missed my alarm this morning.,Ang Tini phungni Alarm korokha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+137,Could you please repeat that?,Nwng abono teiwaisa khwlaida manphino?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+138,How do I get to the nearest bus stop?,Bahaikhe ang ganani bus bathakmani thai manwi man?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+139,Can you recommend a good book to read?,Nwng kaisa kaham bijapni mungda saimano porina bagwi?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+140,I need to call customer service.,Ang Custormer Service no ringnanangwi tongkha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+141,Do you want to grab lunch together?,Nwng thangsakhe diporni chamungo manjaknai de?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+142,What’s your favorite hobby?,Nini chajakmani muchungma tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+143,I need to charge my phone.,Ani phone charge khwlaina nango.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+144,Do you know where I left my keys?,Nwng saida man ani Surani boro yakarjak kha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+145,I think I forgot something at home.,Ang kha khwlaio nogo ang mungsaswk pok kha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+146,Let’s go for a movie this weekend.,Phaidi o hatio Toke nailaina thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+147,Have you ever been to this restaurant before?,Swkango o restaurant nwng thangwi de naikha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+148,"Could you turn the volume up, please?","Do kisa , Nwng khorang kwbangda khwlai rwimano?",N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+149,I need to finish my homework before dinner.,Horni chamung ni swkang Ani nokni samung pairwna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+150,Do you like listening to music?,Nwng rwchamung khwnanada hamjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+151,What’s your favorite type of music?,Nwng bobo hai rwchapmungno chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+152,How was your weekend?,Nini O hatirok bahai?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+153,It’s been a busy day for me.,Tini ni sal belaino pailailiya ani bagwi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+154,I’m feeling a bit under the weather today.,Ang tini salni  thani kisa romjagwi tongkha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+155,The traffic was terrible this morning.,Tini phungo traffic belai hamya wngjak.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+156,I need to book a doctor’s appointment.,Ang doctorni saknaijakna bagwi mung swina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+157,Let’s plan something fun for Saturday.,Phaidi chasalo tongthokna bagwi sal chonglai anw.,Saturday,PER,chonglai,0.35,FLAGGED_FOR_MANUAL_REVIEW
+158,Can you help me carry these bags?,Nwng ano o sola twithani chubai da mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+159,Where can I find fresh vegetables?,Ang boro muikwthwng kaham rutuk mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+163,Would you like tea or coffee?,Nwng chade hamjak coffee?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+164,I haven’t seen you in a long time!,Ang nono nukya baluksukha!,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+165,Let’s meet up soon.,Phaidi dakri no malai lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+166,I have a lot of work to do today.,Ani samung kwbangma khwlaijaknai tongo tini.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+167,The internet is really slow right now.,Internet belaino doya wngjak tabukno.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+168,I’ll be back in a few minutes.,Ang tabukno kiphil tongo.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+169,Can you please lower your voice?,Nono koijao khrang twrwtk da khwlai mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+170,Could you check the weather for me?,Nwng ani bagwi salrok bahaida wngno naiwide mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+171,It’s really cold outside today.,Tini belaino kwchang phataro.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+173,I have a flight to catch tomorrow.,Ang khwna birkhung romna nango.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+174,How do you usually spend your weekends?,Nwng bahaikhe nini lenglama salrok katiwi rohor?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+175,I’m trying to learn a new language.,Ang kwtal kok swrwngna bagwi chaitogwi tongo.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+176,Can I borrow your pen for a second?,Ang nini swikong kisa jorani bagwi nawi da mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+177,Let’s take a break and go for a walk.,Phaidi kisa lengla lai anw tei himwi phai lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+178,I forgot my umbrella at home.,Ang ani sati nogo pogwi kabukha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+179,Have you tried this new dish?,Nwng o kwtal mungsa chamungno khugu thepaida naikha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+180,I need to go to the bank today.,Ang tini bank o thanani nango.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+181,Please let me know if you’re free tomorrow.,Nwng khwna jorao haino tongo hwnkhe ano kisa sadi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+182,Can we talk later? I’m a bit busy now.,Chwng ulo kok salai de mano? Tabuk ang kisisa pailaiya wngjak.,I’m,PER,de,0.35,FLAGGED_FOR_MANUAL_REVIEW
+183,Where should we go for vacation?,Chwng  beraina bagwi boro thangkhe chano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+184,I think I lost my wallet.,Ang wansugu ani rang sola kwmakha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+185,The sunset looks beautiful today.,Salhapma tini belaino naithok.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+186,Did you hear the latest news?,Nwng kwtal koktwma de khwnakha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+187,I need to finish reading this book.,Ang o bijap poriwi painani nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+188,Would you like some more coffee?,Nwng teibo coffee da nangkhu?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+189,Let’s take some photos together.,Phaidi thansakhe mangpili nalai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+190,Do you have any plans for the holidays?,Lenglama salni bagwi nini mungsaswk khwlaina chongjak de tong?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+191,I need to wake up early tomorrow.,Ang khwna phungo daktino bachana nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+192,Can I use your laptop for a moment?,Ang nini laptop no kisa jorani bagwi naiwi de mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+193,Have you ever traveled abroad?,Nwng waisa phano haktorni phataro thade thangkha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+194,What’s your dream destination?,Nini imangni naharmung tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+195,I need to buy a birthday gift for my friend.,Ang ani kiching ni bagwi kaisa rwjaknai manwi paina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+196,Can you help me set up this device?,Nwng ano o manwi swnamthani chubaide mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+197,Let’s go shopping this weekend.,Phaidi o lenglama salo manwi painani thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+198,I need to pick up some groceries.,Ang kisaswk manwi khwnwi painani nango.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+199,Would you like to join me for dinner?,Nwng angbai horni chamung chanani bagwi phaiwide mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+200,What’s your favorite TV show?,Nini chajakmani TV show tamo?,TV,PER,TV,0.63,FLAGGED_FOR_MANUAL_REVIEW
+202,I need to set an alarm for tomorrow morning.,Ang khwna phungni bagwi Alarm rwna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+203,Can you help me carry this bag?,Ano nwng sola twi thani chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+204,Let’s order some food online.,Phaidi Chamung Online twi naha lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+205,I need to call my friend later.,Ulo ani kiching no ringna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+206,What time does the train arrive?,Bo jorao train sok phai?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+207,Have you seen my glasses?,Nwng ani Glasses da nuk?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+208,I need to water the plants.,Ang buphano twi luna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+209,Let’s go for a morning walk.,Phaidi phungo himna nongkhor lai  anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+210,Can you remind me to send an email?,Nwng ano muitu da khwlai rwimano email rohor nani?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+211,I forgot my password again.,Ang ani password pogwise thango kha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+212,This coffee tastes really good.,O coffee belaino kothok.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+213,"Can you turn off the lights, please?","Do, nwng kisa chati bwthar da rwi mano?",N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+214,I need to finish my workout routine.,Ang ani samung khwlaimani jorarokno pairwna nangnai?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+215,What should we cook for dinner?,Chwng Horni chamungo tamo songnai?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+216,I need to do my laundry today.,Ang ani rirok suna nangnai tini?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+217,The movie starts at 7 PM.,Sarikni Sni dam tamphuru Toke chengo.,PM,PER,Toke,0.35,FLAGGED_FOR_MANUAL_REVIEW
+218,Can you lend me a book?,Nwng Ano Bijap lakai da rwi mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+219,I have a meeting at 10 AM.,"Ani phungni Damchi jorao kuthum jaknai tongo,",AM,PER,Damchi,0.63,FLAGGED_FOR_MANUAL_REVIEW
+220,Let’s take a day off and relax.,Phaidi salsa chuti nai tei lenglama nalai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+221,Do you want to go to the gym?,Nwng Gym o thangnada muchung?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+222,I need to buy a new pair of shoes.,Ang jorsa moja kwtal paina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+223,Have you ever tried baking a cake?,Nwng waisa phano cake swnamwi da naikha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+224,I lost my earphones again.,Ang ani earphones haino hai kwmajak khuwa.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+225,What time do you usually sleep?,Nwng bwswk jora rogo thu?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+226,Can you share your notes with me?,Nwng angbai notes baklai de mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+227,The traffic is really bad today.,Tini traffic belaino hamya.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+228,I need to clean my room.,Ang ani khotolno sapsutra khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+229,Let’s plan a picnic this weekend.,Phaidi O lenglama salo picnic thangna chonglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+230,I should start saving more money.,Ang teibo rang kwbang khatina chengna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+231,Do you like reading novels?,Nwng kothomayung porinada hamjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+232,I need to finish my assignment by tonight.,Tini horni bisingo ani samungno pairwna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+234,I need to charge my laptop.,Ang ani laptop charge khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+235,Let’s watch a documentary tonight.,Phaidi tini horo kaisa Documentary nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+236,Can you please open the window?,Do Nwng kisa tailam phiyokda rwi mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+237,I need to check my schedule.,Ang ani jorano naina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+238,Let’s go cycling in the park.,Phaidi Beraikhirio Cycle chalokna thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+239,Have you ever tried yoga?,Nwng Yoga khwlaida naikha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+240,I want to learn a new skill.,Ang samung rwng kwtal swrwngna muchungo.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+241,Can you help me solve this puzzle?,Nwng o elumelono soi khwlainani lama phunugwida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+242,Let’s take a group photo.,Phaidi Thansakhe kaisa mangpili nalai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+243,What’s your favorite way to relax?,Nini chajak kukmani lenglama lama tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+244,I need to buy some stationery.,Ang kisa khata kolom paina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+245,Can you recommend a good podcast?,Nwng ano kaham podcast bobo saiwi da mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+246,I should drink more water.,Ang kwbang twi nungna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+248,I need to wake up early for my flight.,Ang daktino bachana nangnai ani birkhung romnani.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+249,Can you help me find my lost keys?,Nwng ano chubaida mano ani surani kwmajak rutuknani?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+250,Let’s go grocery shopping in the evening.,Phaidi manwi khwnwi paina bagwi phalnogo thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+251,I need to book a train ticket.,Ang Train ticket tanani nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+252,Do you prefer reading books or watching movies?,Nwngle tamo sa bijapda poridi hwn toke nainani?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+253,Let’s visit the countryside next month.,Phaidi phainai talo kamio thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+254,Can you help me install this software?,Nwng ano o software dathani chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+255,I need to schedule a doctor’s check-up.,Doctor naijakna bagwi ang jora swnamna nango.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+256,What’s the best way to stay productive?,Tamo khe tongkhe kaham khwlai man?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+257,Let’s try a new restaurant for dinner.,Phaidi kwtal kaisa restaurant  horni chamung chaio nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+258,I need to clean my laptop screen.,Ang ani laptop ni screen huna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+259,Do you enjoy cooking new recipes?,Nwng kwtal khwlai mui songnani tonthok khada?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+260,Let’s go for a picnic in the park.,Phaidi Berailwngo picnic ni bagwi thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+261,I need to take my car for servicing.,Ang Ani malkhung swnamna twlangna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+262,Can you recommend a good skincare routine?,Nwng ano kisa sakni bukur naikoljaknai jorarokno saide mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+263,Let’s watch a sunset at the beach.,Phaidi haching khoro salhapma nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+264,I need to register for an online course.,Ang online swrwngmungni bagwi mung tisa na nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+265,What’s your favorite way to relax after work?,Nwng bahai khe lengla samung ni yagolo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+266,Let’s go to the farmer’s market this weekend.,Phaidi o lenglama salo hukba khwlainairokni hatio thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+267,I need to upgrade my phone soon.,Ang ani phone no daktino upgrade khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+268,Can you help me find a new laptop?,Nwng ano Kwtal laptop rutuknani chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+269,Let’s visit a botanical garden.,Phaidi buphang bithilwngo thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+270,I need to buy a gift for my sister.,Ang Ani hanokni bagwi kaisa rwjaknai manwi paina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+271,What’s your favorite indoor hobby?,Nwng nok bisingo tamo khwlaina hamjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+272,Let’s plan a weekend getaway to the mountains.,"Phaidi, O hatio  hathaio beraina thanglainani kokchaplai anw.",N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+273,I need to download a new productivity app.,Ang kwtal samungo chuknaijat app download ma khwlainai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+274,Can you help me set up my new phone?,Nwng ani phone kwtal setup khwlaina bagwi chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+275,Let’s try making homemade pasta.,Phaidi Nokni swnamjak pasta swnamwi nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+276,I need to organize my wardrobe.,Ang ani swndwk thiti khwlaina nangnai?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+277,What’s your favorite way to exercise?,Nini sakham khe tongnani biyamni lama tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+278,Let’s go explore a new neighborhood.,Phaidi kaisa kwtal nokario thangwi berai nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+279,I need to find a quiet place to study.,Ang kaisa siring siring thai rutukna nangnai porina bagwi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+280,Can you suggest a fun weekend activity?,Nwng saide mano o lenglama hatio tamo khwlaikhe chano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+281,Let’s go for a bike ride in the morning.,Phaidi phungo bike chalokna thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+282,I need to learn how to manage my time better.,Ang swrwngna nangnai jorano bahai khe teibo kaham khwlai man.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+283,What’s your favorite type of music genre?,Nini chajakmani rwchapkwrwng rok bobo hairok?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+284,Let’s plan a family dinner this weekend.,Phaidi O lenglama hatio Nukhungni wngwi horni chamung ni chonglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+285,I need to complete my online assignment.,Ang ani oline samung pairwna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+286,Can you help me update my resume?,Nwng ani sinimung bwlaino kwtal khwlaithani chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+287,Let’s start a new morning routine.,Phaidi phungni kwtal jora chenglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+288,I need to prepare for my job interview.,Ang Ani Samung ni Interview ni bagwi tiyar wngna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+289,What’s the best way to stay motivated?,Bebakni swlai bo lama kahamkuk kaham lama khe tongnani?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+290,Let’s visit an aquarium next Sunday.,Phaidi phainai kokti salo aquarium o thanglai anw.,Sunday,PER,thanglai,0.35,FLAGGED_FOR_MANUAL_REVIEW
+291,I need to set some new personal goals.,Ang kisaswk sakni kwtal naharmungrok chongna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+292,Can you recommend a good workout playlist?,Nwng kisa saide mano samung khwlai phuru khwna jaknai rwchapmung khwna jaknai?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+293,Let’s go bird-watching in the park.,Phaidi berailwngo tokrok naina thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+294,I need to declutter my workspace.,Ang ani samungthaino kisa bukcha ma khwlainai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+295,What’s your favorite childhood memory?,Nini chwrai jorani chajakamni muitumanjak kuknai tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+296,Let’s try making fresh fruit smoothies.,Phaidi Bwthai kahamni bwtwi swnamlai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+297,I need to practice my presentation skills.,Ang Ani presentation ni samungrokni bagwi samung khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+298,Can you help me rearrange my furniture?,Nwng ano ani nokni manwi khwnwi tonthani chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+299,Let’s explore a new hiking trail.,Phaidi kaisa kwtal lama himjaknai tikhwlai lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+300,I need to buy some eco-friendly products.,Ang kisaswk tongkhor bai halok abo hai manwi paina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+301,What’s your dream vacation spot?,Nini Imang ni suti katijaknai thai bobo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+302,Let’s take a spontaneous road trip.,Phaidi haino lama beraina thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+303,I need to make a list of things to do today.,Ang kaisa chapmung bwtang khwlaina nangnai tini khwlaijaknai samungni bagwi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+304,Can you help me set up a budget plan?,Nwng ano Rang swbainani  chongthani chubaide mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+305,Let’s take an evening walk by the lake.,Phaidi sarigo twi rukung ganao himlai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+306,I need to find a new hobby to try.,Ang kwtal loi chaitogwi rutukna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+307,What’s your favorite way to unwind?,Nwng  manwi no bahaikhe dulwi tonani chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+308,Let’s try learning a new language together.,Phaidi palbaksa khe kwtal kok swrwngna chaitok lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+309,I need to drink more herbal tea.,Ang teibo kwbang khe Herbal cha nungnani nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+310,Can you recommend a good productivity book?,Nwng saiwide mano kaisa kaham samung nangnai bijap?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+311,Let’s take a weekend trip to the countryside.,Phaidi o lenglama hatio kami bwkhak berai laai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+312,I need to start a healthy eating habit.,Ang kaham chamung loi khwlainani nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+313,What’s your favorite thing about nature?,Nwng tongkhorno twiwi bo manwino chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+314,Let’s go to a pottery-making class.,Phaidi Kwthwng swnamnamani swrwngthaio thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+315,I need to set aside time for meditation.,Ang siringsorop wansukmano karwi bo jora swnamna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+316,Can you help me organize my photo gallery?,Nwng ano ani mangplini ni tonthaino chapna bagwi chubai de mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+317,Let’s visit an antique shop.,Phaidi kwcham manwi phalmani phalnogo thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+318,I need to update my phone’s software.,Ang ani phoneni software update khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+319,What’s your favorite way to spend Sunday mornings?,Nwng koktisalni phungni jorano bahai khe katinani hamjak?,Sunday,PER,khe,0.35,FLAGGED_FOR_MANUAL_REVIEW
+320,Let’s have a relaxing spa day.,Phaidi tongthothok spa salno nalai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+321,I need to find a good online learning platform.,Ang kaisa kaham online swrwngthai rutukna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+322,Can you help me choose a new wallpaper for my room?,Nwng ano ani khotolni bagwi wallpaper saithani chuabaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+323,Let’s have a barbecue night with friends.,Phaidi kiching songbai horo hangwi chalai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+324,I need to upgrade my internet plan.,Ang ani Internet ni plan no upgrade khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+325,What’s your go-to comfort meal?,Nini chathokjakmani chamung tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+326,Let’s try a new dance class.,Phaidi kwtal mwsamung swrwnglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+327,I need to find a good pair of running shoes.,Ang jorsa khabrumjaknai yaklap naina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+328,Can you help me with my travel itinerary?,Nwng ano chubaide mano beraina lama saithani?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+329,Let’s start a book club.,Phaidi kaisa Bijapni Club chenglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+330,I need to repair my old wristwatch.,Ang ani yaktwk o kanjaknai kwcham jorakhok swnamna nangphinai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+331,What’s your favorite type of flower?,Nwng bahai khum hamjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+332,Let’s go to an open-air cinema.,Phaidi Nukhung kwrwi thaio toke nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+333,I need to renew my passport soon.,Ang ani passport no daktino kwtal khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+334,Can you recommend a good self-care routine?,Nwng sak naikoljaknai jora bobo abo saiwide mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+335,Let’s try making homemade candles.,Phaidi nogo candles chati swnam nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+336,I need to create a new savings plan.,Ang kaisa kwtal khatijaknai chongnani nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+337,What’s the best way to improve focus?,Bo lama soi naharmung no soi khe tonnani?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+338,Let’s visit a science museum.,Phaidi Science ni manwi khwnwi tonthani thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+339,I need to print some important documents.,Ang kisaswk nangkukmani documents no tikhwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+340,Can you help me with my painting project?,Nwng ano chubaide mano ani pali khwlaijaknai samungni bagwi?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+341,Let’s go to a music concert next month.,Phaidi bwskangni tamo rwchapmung pandao thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+342,I need to sign up for a cooking class.,Ang maimui songma thaio swrwngna bagwi mung tisana nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+343,What’s your favorite way to celebrate birthdays?,Nwng bo lamatwi achaima salno palainani chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+344,Let’s visit a local art exhibition.,Phaidi oroni riknairokni phunukmao thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+345,I need to start keeping a gratitude journal.,Ang khanimuchukaham journal narwknani chengna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+346,Can you recommend a good place for brunch?,Nwng saiwida mano kaisa kaham thaino diporni chamungni bagwi?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+347,Let’s go watch a live sports game.,Phaidi baithang thwngmung nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+348,I need to pack for my upcoming trip.,Ang Ani phainai beraimungni bagwi khatina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+349,What’s your favorite type of dessert?,Nwng bahai dessert no chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+350,Let’s create a scrapbook of our memories.,Phaidi bijap rawi chini muituni mari swnamlai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+351,I need to get my bike repaired.,Ang ani bike swnamna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+352,Can you help me find a good travel deal?,Nwng ano kaham kaisa beraikhiri twidulnai rutuk thani chubaide mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+353,Let’s take a photography walk downtown.,Phaidi dolini kwchartwi himwi mangpili nalai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+354,I need to reduce my screen time.,Ang ani screen nainani jora kisa khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+355,What’s your favorite way to spend a lazy day?,Nwng selerma salrokno bahai khwlai katiwi rohor?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+356,Let’s try making homemade soap.,Phaidi nogono Sapan swnamwi nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+357,I need to complete my monthly budget review.,Ang ani talni rangmari rokno cherwi naiwi pairwna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+358,Can you suggest a relaxing weekend activity?,Nwng ano saiwide mano lenglama salrogo kwchang samungrok tamo khwlai man?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+359,Let’s go to a night market.,Phaidi horni hatio thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+360,I need to start a daily journal.,Ang kaisa salbrumni journal chengna nagsinai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+361,What’s your favorite type of coffee?,Nwng bobo hai coffee no chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+362,Let’s watch a classic movie together.,Phaidi kwcham toke kaisa thansakhe nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+363,I need to renew my gym subscription.,Ani ani gym ni subcriptiono kwtal khwlai na nangphinai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+364,Can you help me choose a new indoor plant?,Nwng ano noksing kaijaknai buphang saithani chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+365,Let’s visit a new bookstore in town.,Phaidi kaisa kwtal Bijap Phalnogo thanglai anw dolio.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+366,I need to download a new audiobook.,Ang kwtal kaisa khorang saklainai bijap download khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+367,What’s the best way to learn a new skill?,Bo lama hamkuk samung kwtal swrwngna bagwi?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+368,Let’s take an art and craft workshop.,Phaidi kaisa rikjaknai tei swnamjaknai ni samungnok nanani hwnkhe.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+369,I need to shop for some winter clothes.,Ang kutairok kisa paina nangnai kwchangma jorani bagwi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+370,Can you recommend a good online course?,Nwng kaham kaisa online course khwlaijaknai saiwi de mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+371,Let’s go on a historical tour of the city.,Phaidi laibuma kwrwngjak berai khiri kamiyungo.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+372,I need to try a new skincare product.,Ang kwtal Sakkur kaham wngnai manwi phulwi naina nagnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+373,What’s your favorite way to stay fit?,Nwng bo lama chajak kaham kwrwng tongnani?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+374,Let’s create a vision board for the new year.,Phaidi kaisa Kaisa naharmung bwtang swnam lai anw bisi kwtalni bagwi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+375,I need to organize my digital files.,Ang ani Digital files rokno chapna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+376,Can you help me find a good playlist for study?,Nwng ano rwchapmung bwtang swnamna bagwi chubaide mano porina bagwi?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+377,Let’s take a break and enjoy some fresh air.,Phaidi kisa lengla lai anw tei kaham nobar nalai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+378,I need to find a new place to have coffee.,Ang kwtal thai rutukna nangnai coffee nungna bagwi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+379,What’s your favorite outdoor activity?,Nwng phataro tamorok khwlainanino chajak kuk?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+380,Let’s plan a surprise for our friend’s birthday.,Phaidi Chini Kichingni achaima salno twiwi kaisa kok chaplai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+381,I need to get a haircut this weekend.,Ang o lenglamao Ani khwnairok rajakna nagnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+382,Can you help me wrap this present?,Nwng o manwi kwchwng bulna thapna bagwi chubai da mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+383,Let’s try a new baking recipe together.,Phaidi kwtal baking mung khwlai nailai anw thansakhe.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+384,I need to start meal prepping for the week.,Ang o hatini bagwi chamung rok swnamnani chengwi ma rwnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+385,What’s your favorite family tradition?,Nini nukhungni chajakmani kwcham khwlaimungrok tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+386,Let’s explore a nearby waterfall.,Phaidi ganani twikwlaimao nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+387,I need to call my grandparents this evening.,Ang ani Chuchusongno tini sarigo ringna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+388,Can you help me clean the kitchen?,Nwng ano Songthai sapsutra khwlaina bagwi chubai de mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+389,Let’s create a list of fun weekend ideas.,Phaidi kaisa lenglama salni  bwtang swnam laianw mungsawk khwlaijaknaino twiwi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+390,I need to buy some fresh flowers for my home.,Ang khum kaham kisa paina nangnai ani nokni bagwi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+391,What’s your favorite way to stay productive?,Nwng bo lama chajak kaham kwrwng tongnani?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+392,Let’s plan a picnic at the beach.,Phaidi haching lwngo picnic ni bagwi kok chaplai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+393,I need to check my travel itinerary.,Ang ani beraimani lamarok nainani nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+394,Can you recommend a good travel blog?,Nwng ano saiwida mano kaisa kaham beraimani Blog ?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+395,Let’s try making homemade ice cream.,Phaidi nogo ice cream swnamwi nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+396,I need to start a skincare routine.,Ang sak kur naikolnani bagwi jora chengna nangsinai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+397,What’s the best way to stay hydrated?,Bo lama bebakni swlai hamkuk sak ransayawi tongnani?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+398,Let’s visit a pet adoption center.,Phaidi malmata rima thaio thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+399,I need to plan my meals for the week.,Ang o hatini bagwi  ani chamung no chapnani nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+400,Can you help me decorate for the holidays?,Nwng ano chubaide mano sajuknani lenglama salrokni bagwi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+401,Let’s go thrift shopping this weekend.,Phaidi o lenglama hatio kisa baimung bai pailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+402,I need to take my cat to the vet.,Ang ani amingno malmata naijaknaithaio twlangna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+403,What’s your favorite way to spend a rainy afternoon?,Nwng sarik diporni watwini ulo jorano bahaikhe katiwi rohona chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+404,Let’s take a mindfulness meditation session.,Phaidi bwkhabising kwplwng khe siringsorop khe nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+405,I need to renew my driver’s license.,Ang ani Drivers license kwtal khe swnamna nang phinai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+406,Can you recommend a good health app?,Nwng ano sak kaham App bobo saiwide mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+407,Let’s plan a road trip for next summer.,Phaidi phainai tabwlani lama berainai bagwi chaplai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+408,I need to organize my closet.,Ang ani ri tonthaino bail khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+409,What’s your favorite kind of soup?,Nwng bobo hai bwtwino chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+410,Let’s visit a handmade crafts fair.,Phaidi Yakni swnamjak manwini melao thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+411,I need to clean my camera lens.,Ang ani camerani lens sap khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+412,Can you help me rearrange my bookshelf?,Nwng ano ani bijap tonthaino teisa chapnani chubaide mano.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+413,Let’s go to a beach cleanup event.,Phaidi hachinglwng sapsutra khwlaimani pandao thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+414,I need to schedule a dentist appointment.,Ang buwani doctorni  malaina jora khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+415,What’s the best way to improve time management?,Bo lama bebakni swlai kahamkuk jorano bahaikhe samungo phwnang thani  kaham khwlainani.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+416,Let’s go to a comedy show this weekend.,Phaidi o lenglama salo mwnwi kothok panda thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+417,I need to find a good quality backpack.,Ang kaisa kaham phikung twijaknai sola rutukna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+418,Can you help me build a small home garden?,nwng ano bwsate nokni bwlwng swnamnani bagwi chubaide mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+419,Let’s create a playlist of nostalgic songs.,Phaidi kaisa kwcham khwnathok rwchapmungni bwtang swnamlai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+420,I need to upgrade my reading glasses.,Ang ani porijaknai glasses no teisa kaham khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+421,What’s your favorite way to relax after work?,Nwng samungni yagulo bahaikkhe bo lamatwi  lengla?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+422,Let’s go explore a hidden gem in the city.,Phaidi huijak manwi no karilai anw kamiyungni.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+423,I need to start practicing mindfulness daily.,Ang salbrum no wansukmani  no loi khwlainani chengnani nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+424,Can you help me make a digital planner?,Nwng ano Digital Chapthani  swnamjaknaio chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+425,Let’s go on a food tasting tour.,Phaidi Chamung chanaiwi beraimao thang lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+426,I need to update my wardrobe for the season.,Ang o jorani bagwi ani wardrobe no swlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+427,What’s your favorite way to celebrate small wins?,Bwsa bwkrang palaimani nini chajakmani lama tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+428,Let’s try making a homemade herbal tea blend.,Phaidi nogo no herbal cha sapulwi swnamwi nai lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+429,I need to replace my old wallet.,Ang ani kwcham rang sola swlaina nangsinai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+430,Can you recommend a good self-improvement book?,Nwng saiwida mano kaham kaisa sakno kaham khwlainai bijap?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+431,Let’s visit a cultural festival this month.,Phaidi o talo kaisa hukumu ter o thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+432,I need to organize my travel photos.,Ang ani beraimani mangplirikno chapna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+433,What’s your favorite motivational quote?,Nini Chajakmani khathangsa rwnai kokbwtang bobo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+434,Let’s take a painting class together.,Phaidi palisilna swrwngung palbaksakhe nalai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+435,I need to set up a new email account.,Ang kwtal kaisa email account khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+436,Can you help me pack for my vacation?,Nwng ano ani beraima manwi khwnwirok dathani chubaide mano,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+437,Let’s go to a yoga retreat.,Phaidi Yoga malaima pandao thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+438,I need to send a thank-you note.,Ang kaisa hambai sajak bwlai rohorna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+439,I love the smell of fresh coffee.,Ang coffeeni motom bahaino hamjakgo.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+440,Let’s listen to some music.,Phaidi kisa rwchapmung khwna lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+441,I need to buy a birthday gift.,Ang kaisa achaima salo rwna bagwi manwi paina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+442,Have you tried meditation?,Nwng waisa phano siriwansukda naikha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+443,Do you prefer summer or winter?,Nwng koloma da kwchangma hamjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+444,Let’s plan a weekend getaway.,Phaidi o hatio beraina thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+445,Can you send me the meeting link?,Nwng ano Meeting link rohor da mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+446,I need to organize my desk.,Ang ani somphangni manwino chapnani nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+447,Do you like spicy food?,Nwng yok chamung d hamjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+448,The sunset looks beautiful today.,Tini salhapma belaino naithok.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+449,I need to go to the post office.,Ang post habanok o thanani nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+450,Can we go out for lunch tomorrow?,Khwna chwng phataro diporni chamungni bagwi ongkhor da mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+451,Let’s try a new restaurant.,Phaidi kwtal kaisa restaurant o nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+452,Have you ever been to a live concert?,Nwng waisa phano Mokol baithang rwchaplaima panda de manjak kha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+453,I need to update my resume.,Ani Sinimung kwtal swnam na nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+454,What’s your favorite holiday destination?,Nini chajakmani Lelama beraikhiri thai bobo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+455,Can you suggest a good TV series?,Nwng ano kaham kaisa TV series naina bagwi saida mano?,TV,PER,TV,0.63,FLAGGED_FOR_MANUAL_REVIEW
+456,Let’s bake some cookies.,Phaidi cookies swnam lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+457,I love spending time at the beach.,Haching khoro jora rohornani Ang hamjago.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+458,Do you have any pets?,Nini oro mungsaswk mal mata de tong?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+459,What’s your dream job?,Nini Imang ni samung tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+460,Can you teach me how to swim?,Nwng ano twi yoknani phwrwngwi de mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+461,I need to visit the dentist.,Ang buwani doctorni oro thana nango.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+462,What’s your favorite season?,Nini chajakmani mol tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+463,Let’s go for a road trip.,Phaidi lama beraina bagwi thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+464,I need to buy a gift for my parents.,Ang kaisa rwjaknai manwi paina nango ani ama babuni bagwi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+465,Can you help me with my homework?,Nwng ano chubaida mano ani nokni samungni bagwi?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+466,Let’s go to a bookstore.,Phaidi bijap nogo thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+467,Do you like photography?,Nwng Mangpili khwlaide hamjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+468,I need to wake up early tomorrow.,Ang khwna daktino bachana nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+469,Have you ever been on a cruise?,Nwng waisa phano rung kotor de kakha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+470,Can you share your Wi-Fi password?,Nwng nini Wi-Fi password rwida mano?,Wi-Fi,PER,Wi-Fi,0.63,FLAGGED_FOR_MANUAL_REVIEW
+471,I need to replace my phone cover.,Ani Phone thuklupjaknai swlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+472,Let’s go watch the sunset.,Phaidi Sal hapmani nailaigana.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+473,Do you prefer tea or coffee?,Nwng Cha da hamjak Coffee.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+474,I need to buy some new clothes.,Ang Kisa ri kwtalrok paina nangnai?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+475,Let’s visit a museum this weekend.,Phaidi O lelama salo meseum berai lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+476,I should start a new workout plan.,Ang kwtal kaisa samung ni raida chengna nangnai?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+477,What’s your favorite ice cream flavor?,Nini thokjakmani ice cream tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+478,Can you recommend a good song?,Nwng kaisa rwchapmung kaham saide mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+479,I need to prepare for my exam.,Ani Amjukmungni bagwi ang tiyar khwlaina nango.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+480,Let’s cook something new today.,Phaidi kwtal kaisa mui songlai anw tini.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+481,Do you enjoy gardening?,Nwng bari khwlaiwi tongthok khada?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+482,Have you ever tried painting?,Nwng waisaphano palirok phulwi da naikha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+483,Can you help me set up my phone?,Nwng ani phone kwtal setup khwlaina bagwi chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+484,Let’s go bowling sometime.,Phaidi khitarna thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+485,I need to buy a new backpack.,Ang kaisa twijaknai sola paina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+486,Do you prefer movies or books?,Nwng Toke da naidi hwn Bijaprok?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+487,Let’s go for a morning jog.,Phaidi phungo khabrumna thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+488,What’s the best dish you’ve ever cooked?,Nwng tamo muino kothok khe sok kha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+489,Can you help me fix my laptop?,Nwng ano ani laptop swnamnani bagwi chubaide mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+490,I love collecting souvenirs.,Ang muitu bwlairokno thumnani hamjago.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+491,What’s your favorite way to spend weekends?,Nwng bahai khe lenglama salrokno katiwi rohor?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+492,Let’s go star-gazing tonight.,Phaidi tini horo Athukiri naina bagwi thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+493,Do you believe in fate?,Nwng kwpalo swijakno poito de khwlai?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+494,I need to send an important email.,Ang kaisa nangkukmani email rohorna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+495,What’s your favorite type of weather?,Nwng bobo hai jorano chajak kuk?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+496,Can you help me choose a gift?,Nwng ano rwjaknai manwi saithani chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+497,I need to book a taxi.,Ang khungsa malkung no sana nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+498,Let’s go to an amusement park.,Phaidi kaisa tongthothok berailwngo thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+499,What’s your favorite childhood cartoon?,Nini chwrai jorani naithokjakmani cartoon tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+500,I need to renew my library card.,Ang ani library card kwtal khwlaina nangpghinai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+501,Have you ever tried hiking?,Nwng waisa phano hachuk lamarok himwida naikkha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+502,Can you recommend a good workout routine?,Nwng kaham khe samung khwlainani bo jora ham sawide mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+503,Let’s try making homemade pizza.,Phaidi Nogo pizza swnamwi nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+504,Do you like solving puzzles?,Nwng Elumelu no thepanani da hamjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+505,I need to organize my bookshelf.,Ang ani bijap tonjaknai thiti khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+506,Have you ever written a poem?,Nwng waisaphano koklop swikhade?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+507,Can you help me decorate my room?,Nwng ano ani khotol sajukna bagwi chubaide mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+508,I love exploring new places.,Ang kwtal thai berainai nainai hamjago.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+509,Let’s go to a food festival.,Phaidi kaisa chamung ter o thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+510,I need to buy a new diary.,Ang kaisa kwtal diary paina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+511,What’s your favorite board game?,Nini chajakmani Board o thwngjaknai tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+512,Do you like watching documentaries?,Nwng Documentaries nainani chade chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+513,Let’s make a photo album.,Phaida kaisa mangpili tonthai swnamlai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+514,What’s your favorite weekend activity?,Nini chajakmani samung tamo lenglama saalo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+515,Can you help me wrap this gift?,O rwjaknai no thepthani ano nwng chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+516,Do you enjoy camping?,Nwng Riswngwi tongmani twda tongthokjak kha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+517,I need to return some books to the library.,Ang kisaswk bijap phirok rwina nangnai library o.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+518,What’s your favorite kind of flower?,Nwng bahai khum chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+519,Let’s go watch a play.,Phaidi nwiwi thwnglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+520,Do you prefer online shopping or in-store shopping?,Nwng Online painai da chajak Hatio thangwi painani?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+521,Can you help me install this app?,Nwng ano O app install khwlaina chubaide mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+523,What’s your favorite snack?,Nini chajakmani chamung tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+524,Let’s go for a swim.,phaidi twi yogwi lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+525,Do you like listening to audiobooks?,Nwng Bijap khorang rwjak khwnana da hamjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+526,I need to get a haircut.,Ang khwnai rana nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+527,What’s the last book you read?,Nwng bo bijap no paithakgo porikha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+528,Can you suggest a fun outdoor activity?,Nwng phataro khwlaijaknai tamo tong saiwide mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+529,Let’s have a game night.,Phaidi Horo thwnglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+530,Do you prefer traveling alone or with friends?,Nwng kiching hayakheba Saichung berainanoda hamjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+531,What’s your favorite city?,Nini chajakmani kamiyung bobo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+532,Let’s go to the zoo this weekend.,Phaidi o hatio Zoo o thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+534,Have you ever tried making handmade gifts?,Nwng waisa phano yakbai swnamjak manwi swnamwi da naikha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+535,Let’s visit a flea market.,Phaidi Kwcham manwi phalma hatio thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+536,I should start learning a new language.,Ang kwtal kok swrwngnani chengna nangkha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+537,Can you help me choose an outfit?,Nwng ano Kanchwlai saithani chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+538,I love watching the stars at night.,Ang horo athukiri naina hamjago.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+541,I need to replace my old phone case.,Ang ani phone ni kwchap thukulupjaknai swlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+542,Do you like attending festivals?,Nwng Ter rok manjaknani chade chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+543,What’s the most exciting thing you’ve ever done?,Nini langmani belaino tongthokmani  samung nwng tamo khwlai kha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+544,Let’s make a bucket list.,Phaidi kaisa bucket bwtang swnam lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+545,What’s one thing you want to learn this year?,Nwng o bisio tamo kaisa swrwngna muchung?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+546,I need to write a to-do list for tomorrow.,Ang khwnani bagwi tamo tamo khwlaithai aboni bwtang swnamna nango.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+547,What’s your favorite way to spend a rainy day?,Nwng watwi jorao jorano bahaikhe katinani chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+548,Let’s go for an evening walk.,Phaidi sarigo himlai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+549,Do you like collecting things?,Nwng manwirok thumnani chade chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+550,I need to get a new passport.,Ang kwtal passport nangwi tongkha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+551,Have you ever tried volunteering?,Nwng waisa phano Luku chubainai wgwida naikha?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+552,Can you help me fix my watch?,Nwng ani jorakhok swnamnani chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+553,I should start eating healthier.,Ang kaham chamung chanani chengna nangsainai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+554,What’s your favorite homemade dish?,Nini Nokni chamung thokjakmani tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+555,Let’s take a short trip next weekend.,Phaidi phainai hati kisa berai phailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+556,Do you like sending postcards?,Nwng postcards rohorna chade chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+557,What’s your favorite thing to do in your free time?,Nini haino jorao tongphuru nnwg tamo khwlainani hamjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+558,Let’s go on a photography walk.,phaidi mangpili tisana himlai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+559,Can you help me pick a wallpaper for my phone?,Nwng ano chubaida mano ani phone o wallpaper thepana bagwi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+560,I need to pack my bag for tomorrow.,Ang ani solano chubaina nangnai khwnani bagwi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+561,What’s your dream travel destination?,Nini imang berai khiri thai boro?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+562,Let’s go to a music festival.,Phaidi Rwchapmung Ter o thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+563,I need to renew my gym membership.,Ang ani gym ni adongno kwtal khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+564,Do you like writing letters?,Nwng Koktwma swinani chade chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+565,Let’s try a new workout challenge.,Phaidi kaisa kwtal samungrok khwlainani chaitoklai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+566,I need to set a reminder for my meeting.,Ang ani malaithaini jorano chongwi rwna nangnai,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+567,What’s your favorite type of soup?,Nwng bahai saban no hamjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+568,Can you help me pick a color for my room?,Nwng ano chubaide mano ani khotolni pali saithani?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+569,Let’s visit an art gallery.,Phaidi Kayamaya Tongma thaio thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+570,I need to buy some candles.,Ang kisa Mombati paina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+571,What’s your favorite local dish?,Nini Chajakmani oroni chamung tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+572,Can you help me find a good podcast to listen to?,Ani bagwi nwng kaisa kaham Podcast rutukda mano khwnana bagwi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+573,Let’s take a break from social media.,Phaidi Social mediani lenglamung nalai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+574,What’s your favorite holiday tradition?,Nini chajakmani Lenglama jorao tamo khwlai?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+575,I should clean my wardrobe this weekend.,O lenglamao salo Ani swndwk no sapsutra khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+576,Can you help me plan my trip itinerary?,Nwng ano chubaida mano ani berainani lamarok chongthani?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+577,Let’s try making fresh juice at home.,Phaidi nogono kaham nungjaknai swnam nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+578,I need to replace my old sneakers.,Ani kwcham Speaker rok swlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+579,What’s your favorite childhood toy?,Nini chwrai jorani chajakamni thwngjaknai tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+580,Let’s go to a pet café.,Phaidi kaisa Malmatarokni café o thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+581,I need to create a playlist for my road trip.,Ani lama beraimao khwnana bagwi kaisa rwchapmung bwtang swnamna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+582,What’s your favorite part of the day?,Nini chajakmani salni bo jorano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+583,Let’s go visit a new coffee shop.,Phaidi kaisa kwtal coffee phalnogo thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+584,Do you like watching the sunrise?,Nwng salkama nainani chade chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+585,I need to update my social media profile.,Ani Social Mediani Profile Swlaina nangsinai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+586,Let’s go visit a farmer’s market.,Phaidi Hukbar khwlainairokni hatio thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+587,I should start writing a journal.,Ang kaisa Journal swinani chengna nango.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+588,Do you like handmade crafts?,Nwng Yakni swnamjak manwirok chade chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+589,What’s your favorite type of tea?,Nini chajakma charok bobo hai?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+590,Let’s go stargazing this weekend.,Phaidi o lenglama hatio Athukiri nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+591,I need to update my calendar.,Ani Salmari najknai bwlai swlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+592,What’s your favorite comfort food?,Nini Chajakma thokjakma chamung tamo?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+593,Let’s go visit a historical place.,Phaidi Laibumabai gwdaljak thaio thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+594,Do you like collecting postcards?,Nwng postcards thumna chade chajak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+595,I need to buy a new pair of sunglasses.,Ang jorsa Satungo thupjaknai glasses phaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+596,What’s your favorite outdoor activity?,Nwng Phataro tamo khwlaina hamajak kuk?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+597,Let’s go watch a fireworks show.,Phaidi Baji sokma phunukmani nailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+598,I need to recharge my phone credit.,Ani Phone credit recharge khwlaina nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+599,What’s your favorite thing to do on a Sunday?,Kokti salo nwng tamo samungrok khwlaina chajak?,Sunday,PER,khwlaina,0.35,FLAGGED_FOR_MANUAL_REVIEW
+600,Let’s plan a surprise party.,Phaidi kaisa party songchalai anw achimsakhe.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+601,Do you enjoy window shopping?,Nwng tailam painani de hamjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+602,I need to buy some flowers for my room.,Ang Ani khotolni bagwi kisaswk khumrok paina nango.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+603,What’s your favorite late-night snack?,Nwng horo kuthugu tamo chamung chanani hamjak?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+604,Let’s try a new recipe today.,Phiaidi tini kaisa kwtal mung songlai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+605,Would you like me to generate this,Nwng tamo nai Ang abono swnam thwng haide?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+606,Let’s go for a walk in the park.,Phaidi berailwngo himgorogwi phai lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+607,I’m feeling a little tired today.,Ang tini kisa lengwi tongkha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+608,I hope everything is going well for you.,Ang kha khwlai bebakno kaham kheno wngwi tongo nini.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+609,Let me know if you need any help.,Nwng mungsaswk chubamung nangkhe ano sadi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+610,I’ll call you later.,Ang nono ulo ringanw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+611,It was nice talking to you.,Nwngbai kok sawi belai khakchangkha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+612,Take care and see you soon.,Kaham tongdi tei dakti no nuklai phinai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+613,I have a meeting in the afternoon.,Sarikni diporo ani borokbai malaina tongo.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+614,What time will you be free?,Bo jorao nini jora tong?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+615,Can we reschedule our meeting?,Chini Malaimungno jora da swlaiwi mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+616,Where would you like to go for lunch?,Diporni chamungni bagwi nwng boro thangna muchung?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+617,I’ll be there in five minutes.,Soti ba ni bisingo ang aro wngnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+618,Could you send me the details?,Nwng Ano bebak cherwi rohor da mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+619,"Sorry, I’m running a little late.","Nakardi, Ang kisa lerwi tongkha.",I’m,PER,Ang,0.35,FLAGGED_FOR_MANUAL_REVIEW
+620,Let’s catch up sometime soon.,Chwng daktino jorano romlai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+621,It’s been a long day.,Sal kwdwkma wngkha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+622,I’m looking forward to the weekend.,Ang lelama salno naisingwi tongo.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+623,How’s your family doing?,Nini nukhung bahai tongbai?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+624,I heard there’s a new restaurant in town.,Ang khwnamani Dolio khungsa kwtal restaurant sok phaikha hwnble.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+625,That sounds like a great idea!,Abo kaisa kotor wansukmung kha chongo.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+626,Let’s plan a trip next month.,Phaidi phainai talo beraina thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+627,Do you prefer tea or coffee?,Nwng tamo chajak Cha da coffee?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+628,I need to go grocery shopping today.,Ang tini manwi khwnwi phalnogo thana nango.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+629,Please remind me to buy some milk.,Ano kisa muitu khwlai rwjakdi do kisa Dud painani.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+630,Can you share the Wi-Fi password?,Nwng Wi-Fi ni password kisa rwida mano?,Wi-Fi,PER,Wi-Fi,0.63,FLAGGED_FOR_MANUAL_REVIEW
+631,I’ll see you at the usual place.,Nwng bai ang a malaima thaio no malai lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+632,Thank you for your help!,Hambai nono nini chubamungni bagwi!,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+633,Can you teach me how to cook this dish?,Nwng ano phwrwngwi da mano abono songnani?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+634,Let’s go for a drive.,phaidi malkhung chalokna thanglai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+636,"It’s already late, we should head home.","Abo agibo lerwi thangkha, chwng nokni bwkhak se lamrwna nango.",N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+637,Do you prefer working in the morning or at night?,Nwng Horo da salo samung khwlaidi hwn?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+638,The stars look amazing tonight.,Tini horo Athukirirok chwngsasa khe nukjak.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+639,"Can I get the bill, please?","Do, Ang Bill da manwi mano?",N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+640,Let’s go out for ice cream.,Phaidi ice cream chailai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+641,I need to exercise more often.,Ang teibo chophlaiyawi sak lorirwna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+642,I love watching the rain.,Ang watwi nainai hamjak-go.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+643,Can you help me fix my computer?,Nwng ano Computer swnamnani chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+644,I’m learning how to play the guitar.,Bahai khe Guiter tamnai ang swrwng tongo.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+645,I love trying new food.,Ang kwtal chamung chai naina hamjago.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+646,Have you ever met a celebrity?,Nwng waisa phano Celebrity bai malaikhada?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+647,Do you believe in luck?,Nwng kwpal ni manthaino puito da khwlai?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+648,I need a break from work.,Ang samungni lenglamung nango.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+649,The park is so peaceful in the morning.,O berai khiri phungo belaikheno kwchang kwchang.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+650,Can we meet at 3 PM instead of 2 PM?,Chwng dam nwini jagao dam thamo malaida mano?,PM,PER,dam,0.35,FLAGGED_FOR_MANUAL_REVIEW
+651,Do you prefer cats or dogs?,Nwng tamo chajak Aming de Swi.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+652,Let’s take a road trip someday.,Phaidi salsa lama berai lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+653,I’m thinking about redecorating my room.,Ang wansugwi tongo ani tongmani khotolno teisa kwta khe sajuknani.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+654,The library is a great place to study.,Bijap nok kaisa porinani bagwi belai thai kaham.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+655,I need to find a good study spot.,Ang porithai kaham kaisa rutukna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+656,I love watching sunsets.,Sal hapma nainani ang belai hamjago.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+657,Can you help me move this chair?,O achukthai norna bagwi ano nwng chubaida mano?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+658,Do you have a charger with you?,Nini logio charger da tong?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+659,The power just went out.,Pherang tabukno thangdrop.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+660,I need to finish my project by tomorrow.,Khwnani bisingo no ani samung pairwna nango.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+661,Let's go for a coffe break.,Phaidi kisa coffee nunglai lengla lai anw.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+662,It's been a long time since we last met.,Chwng paithak malaimani belaino kwdwk sal wngkha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+663,Do you want to try this new café ?,Nwng kwtal Café thangna muchungo de?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+664,I need to refill my water bottle.,Ang ani twi bottle no supungnani nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+665,Can you help me with this math problem?,Nwng ano chubaida mano O Ongko jwngjalno.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+666,I'm planning a surprise for my friend.,Ang ani kichingni bagwi kaisa samungno chongwi tongo.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+667,I need to get my car serviced.,Ang Ani malkhung swnamna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+668,"Let""s go hiking next weekend.",Phaidi hathaio himna thanglai anw phainai lenglama salo.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+669,I should drink more water every day.,Ang salbrumno twi kwbang khe nungna nangnai.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+670,I love taking long walks in the evening.,Ang lama kolok  himnani hamjago sarik sarigo.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+671,What's the best movie you've ever watched?,Nwng naimani tabukswk joratwi bo toke kahamkuk?,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+672,I'm thinking about starting a new hobby.,Ang wansuk tongo kaisa kwtal samung chengnani.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY
+673,It's time to head home.,Nogo thangnani jora wngkha.,N/A,NONE,N/A,0.0,CONVERSATIONAL / ZERO_ENTITY

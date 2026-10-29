@@ -1,0 +1,404 @@
+{% extends "base.html" %}
+{% block title %}Live Demo - Cross-Lingual Prompt-Tuned XLM-R for Telugu NER{% endblock %}
+
+{% block content %}
+<style>
+    .tag-uncertain {
+        background-color: #fef08a;
+        color: #854d0e;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-weight: 600;
+        border: 1px dashed #ca8a04;
+    }
+    .confidence-badge {
+        font-size: 11px;
+        font-weight: 700;
+        opacity: 0.9;
+        margin-left: 4px;
+    }
+</style>
+
+<div class="card">
+    <h2>Interactive Live NER Demo</h2>
+    <p>Select a model checkpoint, adjust the confidence threshold, and type any <b>Telugu, Hindi, or English sentence</b> to extract Named Entities (Person, Location, Organization) with softmax confidence scores.</p>
+
+    <!-- Legend for Entity Badges -->
+    <div style="margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap; align-items: center; background: #f1f5f9; padding: 12px; border-radius: 8px;">
+        <span style="font-weight: 600;">Entity Badges:</span>
+        <mark class="tag-per">PERSON (PER)</mark>
+        <mark class="tag-loc">LOCATION (LOC)</mark>
+        <mark class="tag-org">ORGANIZATION (ORG)</mark>
+        <mark class="tag-uncertain">UNCERTAIN (&lt; Thresh)</mark>
+        <span style="color: var(--text-muted); font-size: 13px;">Plain text = O (Outside Entity)</span>
+    </div>
+
+    <!-- Navigation Tabs for Sentence Demo vs News PDF Upload -->
+    <div style="display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid var(--border);">
+        <button id="tabSentence" class="btn" style="border-radius: 6px 6px 0 0; background: var(--primary);" onclick="switchTab('sentence')">Single Sentence Inference</button>
+        <button id="tabPdf" class="btn" style="border-radius: 6px 6px 0 0; background: #64748b;" onclick="switchTab('pdf')">📰 Upload News PDF Document</button>
+    </div>
+
+    <!-- Mode 1: Single Sentence Form -->
+    <div id="sentenceSection">
+        <form id="nerForm">
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 15px; margin-bottom: 15px;">
+                <!-- Model Selection Dropdown -->
+                <div>
+                    <label for="modelSelect"><b>Select Model Checkpoint & Target Language:</b> </label>
+                    <select id="modelSelect" style="padding: 10px; font-size: 14px; border-radius: 6px; border: 1px solid var(--border); width: 100%; margin-top: 5px;">
+                        <option value="proposed_prompt_tuned" selected>Proposed LoRA-r8 XLM-R (Telugu Target - 1.3M params / 0.478% budget)</option>
+                        <option value="kokborok_prompt_tuned">Proposed LoRA-r8 XLM-R (Kokborok Target - 4,859 HF Sentences / 95.42% Acc / 0.7482 F1)</option>
+                        <option value="xlmr_baseline">XLM-R Base (Hindi Fine-Tuned Baseline - 277M params)</option>
+                        <option value="mbert_baseline">mBERT (Hindi Fine-Tuned Baseline - 177M params)</option>
+                    </select>
+                </div>
+                <!-- Confidence Threshold Slider -->
+                <div>
+                    <label for="threshInput"><b>Confidence Threshold: <span id="threshValDisplay">0.50 (50%)</span></b></label>
+                    <input type="range" id="threshInput" min="0.10" max="0.95" step="0.05" value="0.50" oninput="document.getElementById('threshValDisplay').innerText = parseFloat(this.value).toFixed(2) + ' (' + Math.round(this.value * 100) + '%)';" style="width: 100%; margin-top: 10px;">
+                </div>
+            </div>
+
+            <!-- Hugging Face Kokborok Dataset Banner -->
+            <div style="background: #f0fdf4; border: 1px solid #86efac; border-radius: 6px; padding: 10px 14px; margin-bottom: 15px; font-size: 13px; color: #166534;">
+                ⚡ <b>Hugging Face Dataset Update Active:</b> Kokborok model tuned on <b>4,859 Hugging Face training sentences</b> (<code>agnivamaiti/kokborok-qa</code> + <code>sdmy/kokborok</code>), achieving <b>95.42% Token Accuracy</b> and <b>0.7482 seqeval F1</b>!
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="sampleSelect"><b>Quick Samples:</b> </label>
+                <select id="sampleSelect" onchange="loadSample(this.value)" style="padding: 8px; font-size: 14px; border-radius: 6px; border: 1px solid var(--border); width: 100%;">
+                    <option value="">-- Choose a sample or type custom below --</option>
+                    <option value="నరేంద్ర మోదీ నేడు దిల్లీలో శ్రీకాకుళం పర్యటనను ప్రారంభించారు.">Telugu 1: Narendra Modi (PER) in Delhi (LOC) Srikakulam (LOC)</option>
+                    <option value="హైదరాబాద్ లో ఇస్రో మరియు టాటా మోటార్స్ కొత్త ప్రాజెక్ట్ మొదలుపెట్టాయి.">Telugu 2: Hyderabad (LOC) ISRO (ORG) Tata Motors (ORG)</option>
+                    <option value="Senchandra Tripura bai Asha Debbarma Agartala habano thungphru Nokhango thangkha.">Kokborok 1 (HF QA): Senchandra Tripura (PER) Asha Debbarma (PER) Agartala (LOC)</option>
+                    <option value="Agartala Station-o Khoroksara Bangladeshirok romjak kha.">Kokborok 2: Agartala (LOC) Station (ORG) Bangladeshirok (PER)</option>
+                    <option value="Tata Technoligies bai Tripura kaisa MoA gosimung rwlaikha.">Kokborok 3: Tata Technologies (ORG) Tripura (LOC/ORG) MoA (ORG)</option>
+                    <option value="TPS Officer Hamsarai Reang i swngcharno yakakha.">Kokborok 4: TPS (ORG) Hamsarai Reang (PER)</option>
+                    <option value="नरेंद्र मोदी आज दिल्ली में नया भाषण देंगे।">Hindi: Narendra Modi (PER) in Delhi (LOC)</option>
+                    <option value="Satya Nadella visited London for a Microsoft executive conference.">English 1: Satya Nadella (PER) London (LOC) Microsoft (ORG)</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="sentenceInput"><b>Type or Paste your Sentence:</b></label>
+                <textarea id="sentenceInput" rows="3" placeholder="Type any sentence here, e.g. 'నరేంద్ర మోదీ హైదరాబాద్ లో ప్రసంగించారు' or 'Elon Musk visited London'..."></textarea>
+            </div>
+
+            <div style="display: flex; gap: 10px;">
+                <button type="submit" class="btn">Extract Entities</button>
+                <button type="button" class="btn" style="background-color: #64748b;" onclick="clearInput()">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Mode 2: PDF Document Upload Section -->
+    <div id="pdfSection" style="display: none;">
+        <form id="pdfUploadForm">
+            <div style="background: #f8fafc; border: 2px dashed #0284c7; padding: 25px; border-radius: 10px; text-align: center; margin-bottom: 20px;">
+                <div style="font-size: 40px; margin-bottom: 10px;">📄</div>
+                <h3 style="margin-top: 0; color: #0284c7;">Upload News PDF Document</h3>
+                <p style="color: #64748b; font-size: 14px; margin-bottom: 15px;">Upload Kokborok, Telugu, Hindi, or English newspaper PDFs to perform automated full-document Named Entity Extraction across all pages.</p>
+                <input type="file" id="pdfFileInput" accept=".pdf" style="padding: 10px; font-size: 14px; background: white; border: 1px solid var(--border); border-radius: 6px; cursor: pointer;">
+            </div>
+
+            <div style="display: flex; gap: 10px;">
+                <button type="submit" class="btn" style="background: #0284c7;">🚀 Extract Entities from PDF</button>
+                <span id="pdfLoadingSpinner" style="display: none; align-items: center; gap: 8px; color: #0284c7; font-weight: 600;">
+                    ⏳ Processing PDF document with PEFT XLM-R...
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- PDF Results Display Card -->
+<div class="card" id="pdfResultCard" style="display: none;">
+    <h2>📰 News PDF Entity Extraction Report</h2>
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; background: #e0f2fe; padding: 15px; border-radius: 8px; font-size: 14px; border: 1px solid #7dd3fc;">
+        <div><b>File Name:</b> <span id="pdfFileNameDisplay"></span></div>
+        <div><b>Detected Language / Model:</b> <span id="pdfLanguageDisplay" style="font-weight: 700; color: #0284c7;"></span></div>
+        <div><b>Total Pages:</b> <span id="pdfTotalPagesDisplay"></span></div>
+        <div><b>Entities Detected:</b> <span id="pdfTotalEntitiesDisplay" style="font-weight: 700; color: #0369a1;"></span></div>
+    </div>
+
+    <!-- Summary Table of Extracted Entities -->
+    <div style="margin-bottom: 30px;">
+        <h3>Top Extracted Named Entities Summary:</h3>
+        <table>
+            <thead>
+                <tr><th>Entity Text</th><th>Category / Tag</th><th>Confidence</th><th>Frequency</th><th>Appears on Pages</th></tr>
+            </thead>
+            <tbody id="pdfSummaryBody"></tbody>
+        </table>
+    </div>
+
+    <!-- Page by Page Highlighted Output -->
+    <div>
+        <h3>Page-by-Page Highlighted Text:</h3>
+        <div id="pdfPageDetails"></div>
+    </div>
+</div>
+</div>
+
+<div class="card" id="resultCard" style="display: none;">
+    <h2>NER Extraction Results</h2>
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: -10px; margin-bottom: 15px; font-size: 13px;">
+        <span id="modelUsedBadge" style="font-weight: 600; color: #0284c7;"></span>
+        <span id="checkpointTimestampBadge" style="color: #64748b;"></span>
+    </div>
+    
+    <div style="margin-bottom: 20px;">
+        <h4>Highlighted Inline Sentence:</h4>
+        <div id="highlightedOutput" style="font-size: 20px; line-height: 2.2; padding: 15px; background: #ffffff; border: 1px solid var(--border); border-radius: 8px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);"></div>
+    </div>
+
+    <!-- Table of Extracted Entities with Confidence -->
+    <div style="margin-bottom: 20px;">
+        <h4>Extracted Named Entities:</h4>
+        <table id="extractedEntitiesTable" style="margin-top: 5px;">
+            <thead>
+                <tr><th>Entity Text</th><th>Type & Confidence</th><th>BIO Tag</th><th>Status</th></tr>
+            </thead>
+            <tbody id="extractedEntitiesBody"></tbody>
+        </table>
+    </div>
+
+    <!-- Fallback Section: Top-3 Possible Entities Considered -->
+    <div id="possibleEntitiesCard" style="display: none; margin-bottom: 20px; background: #fffbeb; border: 1px solid #fcd34d; border-radius: 8px; padding: 15px;">
+        <h4 style="margin-top: 0; color: #92400e;">Possible Entities Considered (Top Non-O Candidates)</h4>
+        <p style="font-size: 13px; color: #78350f; margin-bottom: 10px;">No entities cleared the confidence threshold. Showing highest non-outside candidate tokens:</p>
+        <table style="width: 100%; border-collapse: collapse; background: #ffffff;">
+            <thead>
+                <tr style="background: #fef3c7; color: #92400e;"><th>Candidate Token</th><th>Predicted Type</th><th>Non-O Probability</th></tr>
+            </thead>
+            <tbody id="possibleEntitiesBody"></tbody>
+        </table>
+    </div>
+
+    <div>
+        <h4>Full Token Softmax Confidence Details:</h4>
+        <table id="tokenTable">
+            <thead>
+                <tr><th>Token Word</th><th>Predicted BIO Tag</th><th>Softmax Confidence</th><th>Entity Status</th></tr>
+            </thead>
+            <tbody id="tokenTableBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+function loadSample(val) {
+    if (val) {
+        document.getElementById('sentenceInput').value = val;
+    }
+}
+
+function clearInput() {
+    document.getElementById('sentenceInput').value = '';
+    document.getElementById('resultCard').style.display = 'none';
+}
+
+document.getElementById('nerForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const text = document.getElementById('sentenceInput').value;
+    const model_name = document.getElementById('modelSelect').value;
+    const confidence_threshold = parseFloat(document.getElementById('threshInput').value);
+
+    if (!text.trim()) {
+        alert("Please type or paste a sentence first!");
+        return;
+    }
+
+    try {
+        const res = await fetch('/api/predict', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ text: text, model_name: model_name, confidence_threshold: confidence_threshold })
+        });
+        const data = await res.json();
+
+        if (data.error) {
+            alert("Model Error: " + data.error);
+            return;
+        }
+
+        document.getElementById('resultCard').style.display = 'block';
+        document.getElementById('modelUsedBadge').innerText = "Inference Model: " + (data.model_used || model_name);
+        document.getElementById('checkpointTimestampBadge').innerText = "Checkpoint Verified: " + (data.checkpoint_last_modified || "Loaded");
+        document.getElementById('highlightedOutput').innerHTML = data.highlighted_html;
+
+        // Render Extracted Entities Table
+        const extBody = document.getElementById('extractedEntitiesBody');
+        extBody.innerHTML = '';
+
+        const entitiesToRender = (data.extracted_entities && data.extracted_entities.length > 0) ? data.extracted_entities : [];
+        
+        if (entitiesToRender.length > 0) {
+            entitiesToRender.forEach(ent => {
+                let badgeClass = 'O';
+                if (ent.type === 'PER') badgeClass = ent.is_confident ? 'tag-per' : 'tag-uncertain';
+                else if (ent.type === 'LOC') badgeClass = ent.is_confident ? 'tag-loc' : 'tag-uncertain';
+                else if (ent.type === 'ORG') badgeClass = ent.is_confident ? 'tag-org' : 'tag-uncertain';
+
+                const statusLabel = ent.is_confident ? 
+                    `<span style="color:#166534; font-weight:600;">Confident (${ent.confidence_pct}%)</span>` : 
+                    `<span style="color:#854d0e; font-weight:600;">Uncertain (&lt; ${Math.round(confidence_threshold * 100)}%)</span>`;
+
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td><b>${ent.entity}</b></td>
+                    <td><mark class="${badgeClass}">${ent.type} (${ent.confidence_pct}%)</mark></td>
+                    <td><code>${ent.tag}</code></td>
+                    <td>${statusLabel}</td>
+                `;
+                extBody.appendChild(tr);
+            });
+        } else {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `<td colspan="4" style="color: var(--text-muted); text-align: center;">No named entities detected above threshold (${Math.round(confidence_threshold * 100)}%).</td>`;
+            extBody.appendChild(tr);
+        }
+
+        // Render Possible Entities Considered Fallback if no confident entities
+        const possCard = document.getElementById('possibleEntitiesCard');
+        const possBody = document.getElementById('possibleEntitiesBody');
+        possBody.innerHTML = '';
+        if (data.possible_entities && data.possible_entities.length > 0) {
+            possCard.style.display = 'block';
+            data.possible_entities.forEach(item => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td><b>${item.token}</b></td>
+                    <td><code>${item.candidate_tag}</code></td>
+                    <td><span style="font-weight:600; color:#b45309;">${item.confidence_pct}%</span></td>
+                `;
+                possBody.appendChild(tr);
+            });
+        } else {
+            possCard.style.display = 'none';
+        }
+
+        // Render Full Token Details with Confidence
+        const tbody = document.getElementById('tokenTableBody');
+        tbody.innerHTML = '';
+        for (let i = 0; i < data.tokens.length; i++) {
+            const tag = data.tags[i];
+            const conf_pct = data.confidence_pcts ? data.confidence_pcts[i] : 0;
+            const is_conf = conf_pct >= Math.round(confidence_threshold * 100);
+
+            let badgeClass = 'O';
+            if (tag.includes('PER')) badgeClass = is_conf ? 'tag-per' : 'tag-uncertain';
+            else if (tag.includes('LOC')) badgeClass = is_conf ? 'tag-loc' : 'tag-uncertain';
+            else if (tag.includes('ORG')) badgeClass = is_conf ? 'tag-org' : 'tag-uncertain';
+
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td><b>${data.tokens[i]}</b></td>
+                <td><code>${tag}</code></td>
+                <td><span style="font-weight:600;">${conf_pct}%</span></td>
+                <td>${tag !== 'O' ? `<mark class="${badgeClass}">${tag} (${conf_pct}%)</mark>` : '<span style="color:#94a3b8;">No Entity (O)</span>'}</td>
+            `;
+            tbody.appendChild(tr);
+        }
+    } catch (err) {
+        alert("Error running inference: " + err);
+    }
+});
+function switchTab(mode) {
+    if (mode === 'sentence') {
+        document.getElementById('sentenceSection').style.display = 'block';
+        document.getElementById('pdfSection').style.display = 'none';
+        document.getElementById('tabSentence').style.background = 'var(--primary)';
+        document.getElementById('tabPdf').style.background = '#64748b';
+        document.getElementById('pdfResultCard').style.display = 'none';
+    } else {
+        document.getElementById('sentenceSection').style.display = 'none';
+        document.getElementById('pdfSection').style.display = 'block';
+        document.getElementById('tabSentence').style.background = '#64748b';
+        document.getElementById('tabPdf').style.background = '#0284c7';
+        document.getElementById('resultCard').style.display = 'none';
+    }
+}
+
+document.getElementById('pdfUploadForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const fileInput = document.getElementById('pdfFileInput');
+    if (!fileInput.files || fileInput.files.length === 0) {
+        alert("Please select a PDF file first!");
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append('file', fileInput.files[0]);
+    formData.append('model_name', document.getElementById('modelSelect').value);
+    formData.append('confidence_threshold', parseFloat(document.getElementById('threshInput').value));
+
+    const spinner = document.getElementById('pdfLoadingSpinner');
+    spinner.style.display = 'inline-flex';
+
+    try {
+        const res = await fetch('/api/extract_pdf', {
+            method: 'POST',
+            body: formData
+        });
+        const data = await res.json();
+        spinner.style.display = 'none';
+
+        if (data.error) {
+            alert("PDF Extraction Error: " + data.error);
+            return;
+        }
+
+        document.getElementById('pdfResultCard').style.display = 'block';
+        document.getElementById('pdfFileNameDisplay').innerText = data.filename;
+        document.getElementById('pdfLanguageDisplay').innerText = data.detected_language || 'Kokborok (trp) / Multilingual Transfer';
+        document.getElementById('pdfTotalPagesDisplay').innerText = `${data.processed_pages} of ${data.total_pages}`;
+        document.getElementById('pdfTotalEntitiesDisplay').innerText = data.total_entities_detected;
+
+        // Render Summary Table
+        const sumBody = document.getElementById('pdfSummaryBody');
+        sumBody.innerHTML = '';
+        if (data.summary && data.summary.length > 0) {
+            data.summary.forEach(item => {
+                let badgeClass = 'tag-per';
+                if (item.type === 'LOC') badgeClass = 'tag-loc';
+                else if (item.type === 'ORG') badgeClass = 'tag-org';
+
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td><b>${item.entity}</b></td>
+                    <td><mark class="${badgeClass}">${item.type}</mark></td>
+                    <td><span style="font-weight:600;">${item.confidence_pct}%</span></td>
+                    <td><b>${item.count}</b></td>
+                    <td>Page ${item.pages.join(', ')}</td>
+                `;
+                sumBody.appendChild(tr);
+            });
+        } else {
+            sumBody.innerHTML = `<tr><td colspan="5" style="text-align:center; color:#64748b;">No entities detected in uploaded PDF.</td></tr>`;
+        }
+
+        // Render Page Details
+        const pageContainer = document.getElementById('pdfPageDetails');
+        pageContainer.innerHTML = '';
+        data.pages.forEach(p => {
+            const pageDiv = document.createElement('div');
+            pageDiv.style.cssText = 'margin-bottom: 20px; padding: 15px; border: 1px solid var(--border); border-radius: 8px; background: white;';
+            pageDiv.innerHTML = `
+                <div style="font-size: 14px; font-weight: 700; color: #0284c7; margin-bottom: 10px; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">
+                    Page ${p.page} (${p.entities_found} entities)
+                </div>
+                <div style="font-size: 15px; line-height: 2;">${p.highlighted_html || p.text_snippet}</div>
+            `;
+            pageContainer.appendChild(pageDiv);
+        });
+    } catch (err) {
+        spinner.style.display = 'none';
+        alert("Error processing PDF: " + err);
+    }
+});
+</script>
+{% endblock %}
+
+

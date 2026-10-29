@@ -1,0 +1,8 @@
+Model / Architecture,Setting,Trainable Params,F1 Score,Accuracy,Status
+"IndicNER (Kakwani et al., 2020)",Multilingual Mined,278M (100%),0.8239,0.958,Cited Reference
+mBERT (Hindi FT),Hindi -> Telugu Zero-Shot,177.8M (100%),0.6489,0.8938,Baseline Full FT
+XLM-RoBERTa (Hindi FT),Hindi -> Telugu Zero-Shot,277.4M (100%),0.7796,0.9375,Baseline Full FT
+Pure Soft Prompt Tuning,Hindi -> Telugu PEFT,20.7k (0.0075%),0.0,0.7331,PEFT Baseline
+LoRA (r=8),Hindi -> Telugu PEFT,300.2k (0.1081%),0.4993,0.8455,PEFT Sweep
+LoRA (r=16) [Proposed],Hindi -> Telugu PEFT,595.2k (0.2141%),0.4772,0.8089,Headline Proposed
+LoRA (r=32),Hindi -> Telugu PEFT,1.18M (0.4253%),0.1941,0.7859,PEFT Sweep

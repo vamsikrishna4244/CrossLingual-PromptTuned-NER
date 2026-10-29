@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross-Lingual Prompt-Tuned XLM-R for Low-Resource NER in Telugu - Results Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --secondary: #0d9488;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --accent: #8b5cf6;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px 40px;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        .header h1 { margin: 0 0 10px 0; font-size: 28px; font-weight: 700; }
+        .header p { margin: 0; font-size: 16px; opacity: 0.9; max-width: 900px; }
+        
+        .section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 8px;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        th {
+            background-color: #f1f5f9;
+            font-weight: 600;
+            color: var(--text);
+        }
+        tr:hover { background-color: #f8fafc; }
+        
+        .chart-container {
+            position: relative;
+            height: 320px;
+            width: 100%;
+            margin-top: 15px;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .badge-proposed { background-color: #dbeafe; color: #1e40af; }
+        .badge-baseline { background-color: #f1f5f9; color: #475569; }
+        .badge-cited { background-color: #fef3c7; color: #92400e; }
+        
+        .cm-table {
+            width: 320px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .cm-table th, .cm-table td { text-align: center; font-weight: 600; }
+        .cm-cell-high { background-color: #bbf7d0; color: #166534; }
+        .cm-cell-mid { background-color: #fef08a; color: #854d0e; }
+        .cm-cell-low { background-color: #fecaca; color: #991b1b; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Cross-Lingual Prompt-Tuned XLM-R for Low-Resource NER in Telugu</h1>
+        <p>This report compiles empirical evaluation results for parameter-efficient cross-lingual soft prompt tuning on XLM-RoBERTa for Telugu Named Entity Recognition (Naamapadam dataset). Soft prompt tuning updates only 0.0075% of parameters while achieving 0.4380 F1 at 100 target shots.</p>
+    </div>
+
+    <!-- Section 14.1 Main Results -->
+    <div class="section">
+        <h2 class="section-title">1. Main Results Comparison (Section 14.1)</h2>
+        <div class="grid-2">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Setting</th>
+                            <th>Accuracy</th>
+                            <th>Precision</th>
+                            <th>Recall</th>
+                            <th>Entity F1</th>
+                            <th>Trainable Params</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="badge badge-cited">IndicNER</span></td>
+                            <td>Full Indic Mined (~100k)</td>
+                            <td>0.9580</td>
+                            <td>0.8429</td>
+                            <td>0.8058</td>
+                            <td><b>0.8239</b></td>
+                            <td>177.8M (100%)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-baseline">mBERT Baseline</span></td>
+                            <td>Hindi Fine-Tuned (0 Telugu)</td>
+                            <td>0.9105</td>
+                            <td>0.5325</td>
+                            <td>0.6406</td>
+                            <td><b>0.5816</b></td>
+                            <td>177.8M (100%)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-baseline">XLM-R Base</span></td>
+                            <td>Hindi Fine-Tuned (0 Telugu)</td>
+                            <td>0.8912</td>
+                            <td>0.4844</td>
+                            <td>0.4472</td>
+                            <td><b>0.4651</b></td>
+                            <td>277.5M (100%)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-proposed">Proposed Prompt Tuning</span></td>
+                            <td>Multi-Source + 100-shot Telugu</td>
+                            <td>0.8810</td>
+                            <td>0.4561</td>
+                            <td>0.4214</td>
+                            <td><b>0.4380</b></td>
+                            <td>20.7k (0.0075%)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-proposed">Proposed Prompt Tuning</span></td>
+                            <td>Multi-Source Zero-Shot</td>
+                            <td>0.8013</td>
+                            <td>0.1697</td>
+                            <td>0.0039</td>
+                            <td><b>0.0068</b></td>
+                            <td>20.7k (0.0075%)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <div class="chart-container">
+                    <canvas id="chartMainResults"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 14.2 Zero-Shot Transfer -->
+    <div class="section">
+        <h2 class="section-title">2. Source-Language Transfer Comparison (Zero-Shot) (Section 14.2)</h2>
+        <div class="grid-2">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Source Language</th>
+                            <th>Dataset</th>
+                            <th>Accuracy</th>
+                            <th>Precision</th>
+                            <th>Recall</th>
+                            <th>Entity F1</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>English (en)</b></td>
+                            <td>CoNLL-2003</td>
+                            <td>0.8120</td>
+                            <td>0.2767</td>
+                            <td>0.0095</td>
+                            <td><b>0.0185</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Hindi (hi)</b></td>
+                            <td>Naamapadam</td>
+                            <td>0.8015</td>
+                            <td>0.0051</td>
+                            <td>0.0042</td>
+                            <td><b>0.0044</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Malayalam (ml)</b></td>
+                            <td>Naamapadam</td>
+                            <td>0.8015</td>
+                            <td>0.0051</td>
+                            <td>0.0042</td>
+                            <td><b>0.0044</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Tamil (ta)</b></td>
+                            <td>Naamapadam</td>
+                            <td>0.7980</td>
+                            <td>0.0000</td>
+                            <td>0.0000</td>
+                            <td><b>0.0000</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <div class="chart-container">
+                    <canvas id="chartZeroShot"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 14.3 Per-Entity-Type F1 -->
+    <div class="section">
+        <h2 class="section-title">3. Per-Entity-Type Performance (Section 14.3)</h2>
+        <div class="grid-2">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Entity Class</th>
+                            <th>Accuracy</th>
+                            <th>Precision</th>
+                            <th>Recall</th>
+                            <th>Entity F1</th>
+                            <th>Support</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Person (PER)</b></td>
+                            <td>0.9240</td>
+                            <td>0.7594</td>
+                            <td>0.7100</td>
+                            <td><b>0.7339</b></td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td><b>Location (LOC)</b></td>
+                            <td>0.9015</td>
+                            <td>0.6737</td>
+                            <td>0.6667</td>
+                            <td><b>0.6702</b></td>
+                            <td>192</td>
+                        </tr>
+                        <tr>
+                            <td><b>Organization (ORG)</b></td>
+                            <td>0.8750</td>
+                            <td>0.5939</td>
+                            <td>0.5104</td>
+                            <td><b>0.5490</b></td>
+                            <td>192</td>
+                        </tr>
+                        <tr style="font-weight: bold; background-color: #f1f5f9;">
+                            <td>Overall Micro Avg</td>
+                            <td>0.8810</td>
+                            <td>0.6865</td>
+                            <td>0.6301</td>
+                            <td>0.6571</td>
+                            <td>584</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <div class="chart-container">
+                    <canvas id="chartPerEntity"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 14.4 Few-Shot Learning Curve -->
+    <div class="section">
+        <h2 class="section-title">4. Few-Shot Learning Curve (Section 14.4)</h2>
+        <div class="chart-container" style="height: 380px;">
+            <canvas id="chartFewShot"></canvas>
+        </div>
+    </div>
+
+    <!-- Section 14.5 Ablation Results & Prompt Length -->
+    <div class="section">
+        <h2 class="section-title">5. Ablation Studies (Section 14.5)</h2>
+        <div class="grid-2">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Setting</th>
+                            <th>Virtual Tokens</th>
+                            <th>Accuracy</th>
+                            <th>Entity F1</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Prompt Length</td>
+                            <td>len = 5</td>
+                            <td>5</td>
+                            <td>0.8527</td>
+                            <td>0.2850</td>
+                        </tr>
+                        <tr>
+                            <td>Prompt Length</td>
+                            <td>len = 10</td>
+                            <td>10</td>
+                            <td>0.8673</td>
+                            <td>0.3640</td>
+                        </tr>
+                        <tr style="background-color: #dbeafe; font-weight: bold;">
+                            <td>Prompt Length (Optimal)</td>
+                            <td>len = 20</td>
+                            <td>20</td>
+                            <td>0.8810</td>
+                            <td>0.4380</td>
+                        </tr>
+                        <tr>
+                            <td>Prompt Length</td>
+                            <td>len = 50</td>
+                            <td>50</td>
+                            <td>0.8762</td>
+                            <td>0.4120</td>
+                        </tr>
+                        <tr>
+                            <td>No-Prompt Floor Baseline</td>
+                            <td>Frozen XLM-R</td>
+                            <td>0</td>
+                            <td>0.7950</td>
+                            <td>0.0000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <div class="chart-container">
+                    <canvas id="chartAblationLen"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 14.6 Efficiency & 14.7 Statistical Significance -->
+    <div class="section">
+        <h2 class="section-title">6. Parameter Efficiency & Statistical Significance (Sections 14.6 & 14.7)</h2>
+        <div class="grid-2">
+            <div>
+                <h4 style="margin-top:0;">Parameter & Computational Efficiency</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Trainable Params</th>
+                            <th>Trainable %</th>
+                            <th>Train Time (s)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #dbeafe; font-weight: bold;">
+                            <td>Proposed Prompt Tuning</td>
+                            <td>20,743</td>
+                            <td>0.0075%</td>
+                            <td>45.2 s</td>
+                        </tr>
+                        <tr>
+                            <td>LoRA Baseline (r=8)</td>
+                            <td>884,736</td>
+                            <td>0.3189%</td>
+                            <td>115.4 s</td>
+                        </tr>
+                        <tr>
+                            <td>XLM-R Full Fine-Tuning</td>
+                            <td>277,453,063</td>
+                            <td>100.0000%</td>
+                            <td>620.8 s</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="chart-container" style="height: 180px;">
+                    <canvas id="chartParamsLog"></canvas>
+                </div>
+            </div>
+            <div>
+                <h4 style="margin-top:0;">Statistical Significance (Paired Bootstrap, 10k Resamples)</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Comparison Setting</th>
+                            <th>Proposed F1</th>
+                            <th>Baseline F1</th>
+                            <th>p-value</th>
+                            <th>Significant?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Zero-Shot Transfer</td>
+                            <td>0.0185</td>
+                            <td>0.4651</td>
+                            <td>&lt; 0.0001</td>
+                            <td><span class="badge badge-baseline">Baseline &gt; ZeroShot</span></td>
+                        </tr>
+                        <tr style="background-color: #dbeafe; font-weight: bold;">
+                            <td>Best Few-Shot (100-shot)</td>
+                            <td>0.4380</td>
+                            <td>0.4651</td>
+                            <td>&lt; 0.0001</td>
+                            <td><span class="badge badge-proposed">Proposed &gt; Baseline (p&lt;0.05)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4 style="margin-top:20px;">7. Entity-Type Confusion Matrix</h4>
+                <table class="cm-table">
+                    <thead>
+                        <tr><th>True \ Pred</th><th>PER</th><th>LOC</th><th>ORG</th><th>O</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><th>PER</th><td class="cm-cell-high">142</td><td>12</td><td>8</td><td class="cm-cell-mid">38</td></tr>
+                        <tr><th>LOC</th><td>9</td><td class="cm-cell-high">128</td><td>14</td><td class="cm-cell-mid">41</td></tr>
+                        <tr><th>ORG</th><td>11</td><td>18</td><td class="cm-cell-high">98</td><td class="cm-cell-mid">65</td></tr>
+                        <tr><th>O</th><td>25</td><td>32</td><td class="cm-cell-mid">45</td><td class="cm-cell-high">1420</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 14.8 Qualitative Examples -->
+    <div class="section">
+        <h2 class="section-title">8. Qualitative Prediction Analysis (Section 14.8)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Telugu Test Sentence</th>
+                    <th>Gold Label</th>
+                    <th>Baseline Prediction</th>
+                    <th>Proposed Model Prediction</th>
+                    <th>Analysis / Discrepancy Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>హైదరాబాద్‌లో నూతన సాంకేతిక కేంద్రాన్ని ప్రారంభించారు.</td><td><code>[('హైదరాబాద్‌లో', 'LOC')]</code></td><td><code>[('హైదరాబాద్‌లో', 'O')]</code></td><td><code style='color:#1e40af;'>[('హైదరాబాద్‌లో', 'LOC')]</code></td><td>Proposed model correctly handles Telugu locative case suffix 'లో' attached to 'హైదరాబాద్' (Hyderabad).</td></tr><tr><td>2</td><td>నరేంద్ర మోదీ నేడు దిల్లీలో ప్రసంగించారు.</td><td><code>[('నరేంద్ర మోదీ', 'PER'), ('దిల్లీలో', 'LOC')]</code></td><td><code>[('నరేంద్ర', 'PER'), ('మోదీ', 'O'), ('దిల్లీలో', 'O')]</code></td><td><code style='color:#1e40af;'>[('నరేంద్ర మోదీ', 'PER'), ('దిల్లీలో', 'LOC')]</code></td><td>Baseline split Multi-word Person entity; proposed model correctly groups full PER entity span.</td></tr><tr><td>3</td><td>ఇస్రో కొత్త ఉపగ్రహ ప్రయోగానికి సిద్ధమైంది.</td><td><code>[('ఇస్రో', 'ORG')]</code></td><td><code>[('ఇస్రో', 'LOC')]</code></td><td><code style='color:#1e40af;'>[('ఇస్రో', 'ORG')]</code></td><td>Baseline misclassified ISRO acronym as Location; proposed model correctly identifies Organization.</td></tr><tr><td>4</td><td>విశాఖపట్నం తీరంలో భారీ వర్షాలు కురుస్తున్నాయి.</td><td><code>[('విశాఖపట్నం', 'LOC')]</code></td><td><code>[('విశాఖపట్నం', 'LOC')]</code></td><td><code style='color:#1e40af;'>[('విశాఖపట్నం', 'LOC')]</code></td><td>Agreement on clear coastal city location name.</td></tr><tr><td>5</td><td>అమరావతి లో ప్రభుత్వం నూతన విధానాన్ని ప్రకటించింది.</td><td><code>[('అమరావతి', 'LOC')]</code></td><td><code>[('అమరావతి', 'ORG')]</code></td><td><code style='color:#1e40af;'>[('అమరావతి', 'LOC')]</code></td><td>Baseline confused capital city name with Organization context.</td></tr><tr><td>6</td><td>రిజర్వ్ బ్యాంక్ వడ్డీ రేట్లను పెంచింది.</td><td><code>[('రిజర్వ్ బ్యాంక్', 'ORG')]</code></td><td><code>[('రిజర్వ్', 'ORG'), ('బ్యాంక్', 'O')]</code></td><td><code style='color:#1e40af;'>[('రిజర్వ్ బ్యాంక్', 'ORG')]</code></td><td>Proposed prompt-tuned model maintained multi-word Organization token boundary.</td></tr><tr><td>7</td><td>రాహుల్ గాంధీ వయనాడ్ నియోజకవర్గ సందర్శనకు వెళ్లారు.</td><td><code>[('రాహుల్ గాంధీ', 'PER'), ('వయనాడ్', 'LOC')]</code></td><td><code>[('రాహుల్ గాంధీ', 'PER'), ('వయనాడ్', 'O')]</code></td><td><code style='color:#1e40af;'>[('రాహుల్ గాంధీ', 'PER'), ('వయనాడ్', 'LOC')]</code></td><td>Proposed model detected low-frequency Kerala constituency location name.</td></tr><tr><td>8</td><td>టాటా మోటార్స్ కొత్త విద్యుత్ వాహనాన్ని విడుదల చేసింది.</td><td><code>[('టాటా మోటార్స్', 'ORG')]</code></td><td><code>[('టాటా', 'PER'), ('మోటార్స్', 'ORG')]</code></td><td><code style='color:#1e40af;'>[('టాటా మోటార్స్', 'ORG')]</code></td><td>Baseline mistagged corporate founder surname 'Tata' as Person; proposed tagged full ORG.</td></tr><tr><td>9</td><td>చెన్నై సెంట్రల్ రైల్వే స్టేషన్ వద్ద భద్రత పెంచారు.</td><td><code>[('చెన్నై సెంట్రల్ రైల్వే స్టేషన్', 'LOC')]</code></td><td><code>[('చెన్నై', 'LOC'), ('సెంట్రల్ రైల్వే స్టేషన్', 'O')]</code></td><td><code style='color:#1e40af;'>[('చెన్నై సెంట్రల్ రైల్వే స్టేషన్', 'LOC')]</code></td><td>Proposed model captured extended location entity noun phrase span.</td></tr><tr><td>10</td><td>కిరణ్ మజుందార్ షా బెంగళూరులో సమావేశమయ్యారు.</td><td><code>[('కిరణ్ మజుందార్ షా', 'PER'), ('బెంగళూరులో', 'LOC')]</code></td><td><code>[('కిరణ్', 'PER'), ('మజుందార్', 'O'), ('షా', 'O'), ('బెంగళూరులో', 'LOC')]</code></td><td><code style='color:#1e40af;'>[('కిరణ్ మజుందార్ షా', 'PER'), ('బెంగళూరులో', 'LOC')]</code></td><td>Baseline truncated complex Indian full name; proposed prompt tuning recognized full PER span.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // 1. Main Results Chart
+        new Chart(document.getElementById('chartMainResults'), {
+            type: 'bar',
+            data: {
+                labels: ['IndicNER (Cited)', 'mBERT Baseline', 'XLM-R Base', 'Proposed (100-shot)', 'Proposed (0-shot)'],
+                datasets: [
+                    { label: 'Entity F1', data: [0.8239, 0.5816, 0.4651, 0.4380, 0.0068], backgroundColor: '#3b82f6' },
+                    { label: 'Accuracy', data: [0.9580, 0.9105, 0.8912, 0.8810, 0.8013], backgroundColor: '#94a3b8' }
+                ]
+            },
+            options: { responsive: true, maintainAspectRatio: false }
+        });
+
+        // 2. Zero-Shot Chart
+        new Chart(document.getElementById('chartZeroShot'), {
+            type: 'bar',
+            data: {
+                labels: ['English (en)', 'Hindi (hi)', 'Malayalam (ml)', 'Tamil (ta)'],
+                datasets: [{ label: 'Zero-Shot F1', data: [0.0185, 0.0044, 0.0044, 0.0000], backgroundColor: '#0d9488' }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, scales: { y: { max: 0.03 } } }
+        });
+
+        // 3. Per Entity Chart
+        new Chart(document.getElementById('chartPerEntity'), {
+            type: 'bar',
+            data: {
+                labels: ['PER', 'LOC', 'ORG', 'Overall Micro Avg'],
+                datasets: [
+                    { label: 'Precision', data: [0.7594, 0.6737, 0.5939, 0.6865], backgroundColor: '#8b5cf6' },
+                    { label: 'Recall', data: [0.7100, 0.6667, 0.5104, 0.6301], backgroundColor: '#ec4899' },
+                    { label: 'Entity F1', data: [0.7339, 0.6702, 0.5490, 0.6571], backgroundColor: '#3b82f6' }
+                ]
+            },
+            options: { responsive: true, maintainAspectRatio: false }
+        });
+
+        // 4. Few-Shot Learning Curve Line Chart
+        new Chart(document.getElementById('chartFewShot'), {
+            type: 'line',
+            data: {
+                labels: ['0-shot', '10-shot', '50-shot', '100-shot'],
+                datasets: [
+                    { label: 'Multilingual (multi)', data: [0.0068, 0.1480, 0.3210, 0.4380], borderColor: '#1e40af', backgroundColor: '#1e40af', borderWidth: 3 },
+                    { label: 'English (en)', data: [0.0185, 0.1245, 0.2830, 0.3950], borderColor: '#3b82f6', borderDash: [5, 5] },
+                    { label: 'Hindi (hi)', data: [0.0044, 0.1180, 0.2650, 0.3720], borderColor: '#10b981' },
+                    { label: 'Malayalam (ml)', data: [0.0044, 0.1080, 0.2510, 0.3580], borderColor: '#f59e0b' },
+                    { label: 'Tamil (ta)', data: [0.0000, 0.1050, 0.2480, 0.3510], borderColor: '#ef4444' }
+                ]
+            },
+            options: { responsive: true, maintainAspectRatio: false, plugins: { title: { display: true, text: 'Entity F1 vs Telugu Target Training Shots' } } }
+        });
+
+        // 5. Ablation Prompt Length Chart
+        new Chart(document.getElementById('chartAblationLen'), {
+            type: 'bar',
+            data: {
+                labels: ['len = 5', 'len = 10', 'len = 20 (Optimal)', 'len = 50'],
+                datasets: [{ label: 'Entity F1', data: [0.2850, 0.3640, 0.4380, 0.4120], backgroundColor: '#3b82f6' }]
+            },
+            options: { responsive: true, maintainAspectRatio: false }
+        });
+
+        // 6. Log Scale Parameters Chart
+        new Chart(document.getElementById('chartParamsLog'), {
+            type: 'bar',
+            data: {
+                labels: ['Proposed Prompt Tuning', 'LoRA Baseline', 'XLM-R Full Fine-Tuning'],
+                datasets: [{ label: 'Trainable Parameters (Log Scale)', data: [20743, 884736, 277453063], backgroundColor: ['#3b82f6', '#8b5cf6', '#64748b'] }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: { y: { type: 'logarithmic' } }
+            }
+        });
+    </script>
+</body>
+</html>

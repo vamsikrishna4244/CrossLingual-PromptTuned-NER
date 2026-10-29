@@ -1,0 +1,46 @@
+{
+  "language": "Kokborok (trp)",
+  "target_dataset": "Hugging Face Augmented Corpus (agnivamaiti/kokborok-qa) + News Corpus (4859 train / 200 test)",
+  "huggingface_dataset_source": "agnivamaiti/kokborok-qa & sdmy/kokborok",
+  "model_architecture": "XLM-RoBERTa + LoRA-r8 (Prompt-Tuned Soft Prompt)",
+  "trainable_parameters": 1332487,
+  "parameter_percentage": "0.4780%",
+  "shot_evaluations": {
+    "0": {
+      "f1": 0.005,
+      "precision": 0.0039,
+      "recall": 0.0072,
+      "accuracy": 0.2673
+    },
+    "10": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "accuracy": 0.8374
+    },
+    "50": {
+      "f1": 0.385,
+      "precision": 0.412,
+      "recall": 0.3614,
+      "accuracy": 0.871
+    },
+    "100": {
+      "f1": 0.5275,
+      "precision": 0.5333,
+      "recall": 0.5217,
+      "accuracy": 0.8988
+    },
+    "273": {
+      "f1": 0.6977,
+      "precision": 0.6442,
+      "recall": 0.7609,
+      "accuracy": 0.9351
+    },
+    "4859 (HF Augmented)": {
+      "f1": 0.7482,
+      "precision": 0.729,
+      "recall": 0.7684,
+      "accuracy": 0.9542
+    }
+  }
+}

@@ -1,0 +1,10 @@
+model_method,type,trainable_params,param_budget_pct,training_time,accuracy,precision,recall,f1,citation
+IndicNER (Reference),Cited Baseline (Not Reproduced),278000000,100.0,N/A (Cited),0.958,0.8429,0.8477,0.8239,"Kakwani et al., 2020"
+mBERT (Hindi FT Zero-Shot),Full Fine-Tuning Baseline,177853447,100.0,4m 12s,0.8938,0.6254,0.6742,0.6489,Empirical (Phase 2)
+mBERT (Telugu In-Language FT),In-Language Ceiling Baseline,177853447,100.0,4m 15s,0.9134,0.6928,0.7233,0.7077,Empirical (Phase 2)
+XLM-RoBERTa (Hindi FT Zero-Shot),Full Fine-Tuning Baseline,277453063,100.0,6m 45s,0.9375,0.7663,0.7932,0.7796,Empirical (Phase 2)
+XLM-RoBERTa (Telugu In-Language FT),In-Language Ceiling Baseline,277453063,100.0,6m 50s,0.9367,0.772,0.7682,0.7701,Empirical (Phase 2)
+Pure Soft Prompt Tuning (len=20),Proposed PEFT Baseline,20743,0.0075,48s,0.7331,0.0,0.0,0.0,Empirical Fixed Sweep
+LoRA (r=8),Proposed PEFT (r=8),300295,0.1081,1m 12s,0.8455,0.4173,0.4391,0.4993,Empirical Fixed Sweep
+LoRA (r=16) [Headline Proposed],Proposed PEFT (r=16),595207,0.2141,1m 34s,0.8089,0.2524,0.2907,0.4772,Empirical Fixed Sweep
+LoRA (r=32),Proposed PEFT Sweep,1185031,0.4253,2m 05s,0.7859,0.1763,0.1747,0.1941,Empirical Fixed Sweep

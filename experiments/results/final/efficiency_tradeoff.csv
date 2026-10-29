@@ -1,0 +1,7 @@
+Method,Trainable Params,Param Budget %,Training Time,Max F1
+Pure Soft Prompt Tuning,"20,743",0.0075%,48s,0.0
+LoRA (r=8),"300,295",0.1081%,1m 12s,0.4993
+LoRA (r=16) Proposed,"595,207",0.2141%,1m 34s,0.4772
+LoRA (r=32),"1,185,031",0.4253%,2m 05s,0.1941
+mBERT Full FT,"177,853,447",100.0%,4m 12s,0.6489
+XLM-R Full FT,"277,453,063",100.0%,6m 45s,0.7796

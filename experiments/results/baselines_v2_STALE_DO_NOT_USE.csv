@@ -1,0 +1,6 @@
+model,eval_setting,train_language,accuracy,precision,recall,f1,source
+IndicNER (Reference),Full Indic Mined (~100k),Indic Multilingual,0.958,0.8429,0.8477,0.8239,cited
+mBERT (Hindi FT),Hindi -> Telugu Zero-Shot,Hindi (hi),0.8938,0.6254,0.6742,0.6489,reproduced
+mBERT (Telugu In-Language FT),Telugu -> Telugu In-Language,Telugu (te),0.9134,0.6928,0.7233,0.7077,reproduced
+XLM-RoBERTa (Hindi FT),Hindi -> Telugu Zero-Shot,Hindi (hi),0.9375,0.7663,0.7932,0.7796,reproduced
+XLM-RoBERTa (Telugu In-Language FT),Telugu -> Telugu In-Language,Telugu (te),0.9367,0.772,0.7682,0.7701,reproduced

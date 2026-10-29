@@ -1,0 +1,34 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Large dataset dumps exceeding GitHub 100MB limit
+# (Full Naamapadam training splits can be downloaded from AI4Bharat)
+naamapadam_data/hi/hi_train.json
+naamapadam_data/ml/ml_train.json
+naamapadam_data/ta/ta_train.json
+naamapadam_data/te/te_train.json
+
+# Intermediate checkpoints & temporary experiment cache
+experiments/checkpoints/*
+!experiments/checkpoints/.gitkeep

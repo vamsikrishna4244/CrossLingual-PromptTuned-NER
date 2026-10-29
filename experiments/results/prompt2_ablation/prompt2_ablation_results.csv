@@ -1,0 +1,7 @@
+Experiment,Validation_F1_Mean,Validation_F1_Std,Validation_F1_Formatted,Validation_Precision,Validation_Recall,Validation_Accuracy
+"Baseline (LoRA r=8, q+v, Const LR, 15 Epochs, Hi+Te)",0.45153751971933787,0.3912516252868303,0.4515 ± 0.3913,0.4317 ± 0.3739,0.4736 ± 0.4109,0.8537 ± 0.0838
+"Task 1: Target Modules Expansion [q, k, v, dense]",0.6621218158725011,0.015378417551301987,0.6621 ± 0.0154,0.6337 ± 0.0366,0.6946 ± 0.0133,0.8985 ± 0.0062
+Task 2: LR Warmup (10% linear warmup + decay),0.46039923400358024,0.3987178509268115,0.4604 ± 0.3987,0.4422 ± 0.3830,0.4802 ± 0.4159,0.8551 ± 0.0847
+Task 3: Increased Target Epochs (35 Epochs),0.4435651284426689,0.3851063850788436,0.4436 ± 0.3851,0.4336 ± 0.3757,0.4545 ± 0.3959,0.8510 ± 0.0814
+Task 4: Class-Weighted Cross-Entropy Loss,0.4267855700904393,0.37050911816324944,0.4268 ± 0.3705,0.3822 ± 0.3320,0.4831 ± 0.4192,0.8392 ± 0.0710
+Task 5: Multilingual Source Transfer (En+Hi+Ta+Ml),0.6959624894810812,0.011194829104739516,0.6960 ± 0.0112,0.6704 ± 0.0223,0.7239 ± 0.0064,0.9044 ± 0.0038

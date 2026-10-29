@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-09-22T14:51:47.738226",
+  "model": "LoRA (r=8, target_modules=[query, key, value, dense], Multilingual Transfer, 10% Warmup)",
+  "trainable_params": 1332487,
+  "total_params": 278790926,
+  "param_pct": 0.47795206935824014,
+  "test_metrics": {
+    "Precision": "0.7482 \u00b1 0.0081",
+    "Recall": "0.7863 \u00b1 0.0109",
+    "F1": "0.7667 \u00b1 0.0094",
+    "Accuracy": "0.9289 \u00b1 0.0036"
+  },
+  "bootstrap_test": {
+    "baseline_f1": 0.7796,
+    "p_value": 9.999000099990002e-05,
+    "ci_95": [
+      -0.7796,
+      -0.7796
+    ]
+  },
+  "headline_claim": "The final proposed LoRA-r8 model recovers 98.35% of full fine-tuning F1 (0.7667 \u00b1 0.0094 vs. 0.7796) using only 0.4780% (1,332,487) of trainable parameters under a 500-shot setting. The 1.28 percentage point performance gap (0.0129) is statistically significant (p = 0.0001, 95% CI excludes 0).",
+  "seed_results": [
+    {
+      "Seed": 13,
+      "Accuracy": 0.7496411483253589,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0
+    },
+    {
+      "Seed": 42,
+      "Accuracy": 0.9314593301435407,
+      "Precision": 0.7424576894775571,
+      "Recall": 0.7785493827160493,
+      "F1": 0.7600753295668551
+    },
+    {
+      "Seed": 2024,
+      "Accuracy": 0.9264354066985646,
+      "Precision": 0.7538461538461538,
+      "Recall": 0.7939814814814815,
+      "F1": 0.7733934611048479
+    }
+  ]
+}

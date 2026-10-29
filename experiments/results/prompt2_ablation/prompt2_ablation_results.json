@@ -1,0 +1,56 @@
+[
+  {
+    "Experiment": "Baseline (LoRA r=8, q+v, Const LR, 15 Epochs, Hi+Te)",
+    "Validation_F1_Mean": 0.45153751971933787,
+    "Validation_F1_Std": 0.3912516252868303,
+    "Validation_F1_Formatted": "0.4515 \u00b1 0.3913",
+    "Validation_Precision": "0.4317 \u00b1 0.3739",
+    "Validation_Recall": "0.4736 \u00b1 0.4109",
+    "Validation_Accuracy": "0.8537 \u00b1 0.0838"
+  },
+  {
+    "Experiment": "Task 1: Target Modules Expansion [q, k, v, dense]",
+    "Validation_F1_Mean": 0.6621218158725011,
+    "Validation_F1_Std": 0.015378417551301987,
+    "Validation_F1_Formatted": "0.6621 \u00b1 0.0154",
+    "Validation_Precision": "0.6337 \u00b1 0.0366",
+    "Validation_Recall": "0.6946 \u00b1 0.0133",
+    "Validation_Accuracy": "0.8985 \u00b1 0.0062"
+  },
+  {
+    "Experiment": "Task 2: LR Warmup (10% linear warmup + decay)",
+    "Validation_F1_Mean": 0.46039923400358024,
+    "Validation_F1_Std": 0.3987178509268115,
+    "Validation_F1_Formatted": "0.4604 \u00b1 0.3987",
+    "Validation_Precision": "0.4422 \u00b1 0.3830",
+    "Validation_Recall": "0.4802 \u00b1 0.4159",
+    "Validation_Accuracy": "0.8551 \u00b1 0.0847"
+  },
+  {
+    "Experiment": "Task 3: Increased Target Epochs (35 Epochs)",
+    "Validation_F1_Mean": 0.4435651284426689,
+    "Validation_F1_Std": 0.3851063850788436,
+    "Validation_F1_Formatted": "0.4436 \u00b1 0.3851",
+    "Validation_Precision": "0.4336 \u00b1 0.3757",
+    "Validation_Recall": "0.4545 \u00b1 0.3959",
+    "Validation_Accuracy": "0.8510 \u00b1 0.0814"
+  },
+  {
+    "Experiment": "Task 4: Class-Weighted Cross-Entropy Loss",
+    "Validation_F1_Mean": 0.4267855700904393,
+    "Validation_F1_Std": 0.37050911816324944,
+    "Validation_F1_Formatted": "0.4268 \u00b1 0.3705",
+    "Validation_Precision": "0.3822 \u00b1 0.3320",
+    "Validation_Recall": "0.4831 \u00b1 0.4192",
+    "Validation_Accuracy": "0.8392 \u00b1 0.0710"
+  },
+  {
+    "Experiment": "Task 5: Multilingual Source Transfer (En+Hi+Ta+Ml)",
+    "Validation_F1_Mean": 0.6959624894810812,
+    "Validation_F1_Std": 0.011194829104739516,
+    "Validation_F1_Formatted": "0.6960 \u00b1 0.0112",
+    "Validation_Precision": "0.6704 \u00b1 0.0223",
+    "Validation_Recall": "0.7239 \u00b1 0.0064",
+    "Validation_Accuracy": "0.9044 \u00b1 0.0038"
+  }
+]

@@ -1,0 +1,7 @@
+Source Language,Target Language,Model,Precision,Recall,F1 Score
+Hindi (hi),Telugu (te),mBERT Full FT,0.6254,0.6742,0.6489
+Hindi (hi),Telugu (te),XLM-R Full FT,0.7663,0.7932,0.7796
+Hindi (hi),Telugu (te),LoRA-r16 Proposed,0.2524,0.2907,0.4772
+Hindi (hi),Telugu (te),Soft Prompt Tuning,0.0,0.0,0.0
+Telugu (te) In-Lang,Telugu (te),mBERT Full FT,0.6928,0.7233,0.7077
+Telugu (te) In-Lang,Telugu (te),XLM-R Full FT,0.772,0.7682,0.7701

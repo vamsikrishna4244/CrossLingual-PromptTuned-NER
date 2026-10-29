@@ -1,0 +1,7 @@
+flask>=2.3.0
+pandas>=2.0.0
+torch>=2.0.0
+transformers>=4.30.0
+peft>=0.4.0
+seqeval>=1.2.2
+scipy>=1.10.0

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Cross-Lingual Prompt-Tuned Large Language Models for NER in Indian Languages{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="navbar-brand">Cross-Lingual Prompt-Tuned LLMs for NER</a>
+        <ul class="navbar-nav">
+            <li><a href="/" class="{{ 'active' if request.path == '/' }}">Home</a></li>
+            <li><a href="/results" class="{{ 'active' if request.path == '/results' }}">Results</a></li>
+            <li><a href="/demo" class="{{ 'active' if request.path == '/demo' }}">Live Demo</a></li>
+            <li><a href="/workflow" class="{{ 'active' if request.path == '/workflow' }}">Workflow Demo</a></li>
+            <li><a href="/about" class="{{ 'active' if request.path == '/about' }}">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

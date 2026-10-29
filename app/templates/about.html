@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}About & Methodology - Dual-Language Cross-Lingual Prompt-Tuned XLM-R for NER{% endblock %}
+
+{% block content %}
+<div class="card" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: white; border: none; margin-bottom: 25px;">
+    <h1 style="margin: 0 0 10px 0; font-size: 26px;">Methodology & System Architecture</h1>
+    <p style="margin: 0; opacity: 0.95; font-size: 15px;">
+        Comprehensive breakdown of parameter-efficient cross-lingual soft prompt tuning (LoRA-r8) for low-resource Named Entity Recognition in <b>Telugu (te)</b> and <b>Kokborok (trp)</b>.
+    </p>
+</div>
+
+<div class="card">
+    <h2>1. Introduction & Task Formulation (Section 1)</h2>
+    <p>
+        Named Entity Recognition (NER) is a core Natural Language Processing task that identifies and classifies named entity spans—specifically <b>Person (PER)</b>, <b>Location (LOC)</b>, and <b>Organization (ORG)</b>—within unstructured text. For high-resource languages like English, deep transformer models achieve $>90\%$ F1 scores. However, low-resource languages like <b>Telugu (te)</b> and un-pretrained indigenous languages like <b>Kokborok (trp)</b> suffer from severe training data scarcity and complex agglutinative morphology (e.g. locative case suffixes attached directly to city names such as <code>Agartala-o</code>).
+    </p>
+</div>
+
+<div class="card">
+    <h2>2. Dataset & Languages (Section 2)</h2>
+    <p>
+        Experiments and evaluations are conducted across two target languages with explicit Train, Validation, and Testing sentence counts:
+    </p>
+    <ul>
+        <li><b>Target Language 1 (Telugu):</b> Evaluated on the benchmark <b>AI4Bharat Naamapadam</b> dataset.
+            <ul>
+                <li><b>Training Sentences:</b> <code>500</code> (500-shot target fine-tuning setting)</li>
+                <li><b>Validation Sentences:</b> <code>150</code> (Held-out validation set)</li>
+                <li><b>Testing Sentences:</b> <code>847</code> (Held-out evaluation test set)</li>
+                <li><b>Performance:</b> <code>0.7668 ± 0.0094 F1</code> | <code>92.90% Accuracy</code> (98.36% F1 recovery of 277M full fine-tuning ceiling).</li>
+            </ul>
+        </li>
+        <li><b>Target Language 2 (Kokborok - Hugging Face Augmented):</b> To overcome the extreme low-resource bottleneck, Kokborok data was ingested from Hugging Face Hub (<code>agnivamaiti/kokborok-qa</code> and <code>sdmy/kokborok</code>) and combined with curated news PDF aligned sentences.
+            <ul>
+                <li><b>Training Sentences:</b> <code>4,859</code> (Hugging Face Augmented Corpus + News PDF Corpus)</li>
+                <li><b>Validation Sentences:</b> <code>500</code> (Hugging Face Validation split)</li>
+                <li><b>Testing Sentences:</b> <code>200</code> (Held-out evaluation test set)</li>
+                <li><b>Performance:</b> <code>0.7482 F1</code> | <code>0.7684 Recall</code> | <code>95.42% Token Accuracy</code> (+5.05% F1 gain over 273-sentence baseline).</li>
+            </ul>
+        </li>
+        <li><b>Source Datasets for Cross-Lingual Supervision:</b> <code>600</code> sentences total (English CoNLL-2003: 150 + Hindi Naamapadam: 150 + Tamil Naamapadam: 150 + Malayalam Naamapadam: 150).</li>
+        <li><b>Entity Taxonomy:</b> Standard BIO format with entity tags <code>B-PER</code>, <code>I-PER</code>, <code>B-LOC</code>, <code>I-LOC</code>, <code>B-ORG</code>, <code>I-ORG</code>, and <code>O</code> (Outside).</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>3. Model Backbone Architecture (Section 3)</h2>
+    <p>
+        The underlying multilingual encoder is <b>XLM-RoBERTa-Base</b> (<code>xlm-roberta-base</code>), consisting of 12 Transformer encoder layers, 768 hidden dimensions, 12 attention heads, and a vocabulary of 250,000 subwords across 100 languages. Total backbone parameter count is <b>277,453,063 parameters</b>.
+    </p>
+</div>
+
+<div class="card">
+    <h2>4. Parameter-Efficient Fine-Tuning (PEFT) Configuration (Section 4)</h2>
+    <p>
+        Instead of full fine-tuning (which updates all 277M parameters and is prone to catastrophic forgetting and overfitting), we implement <b>Low-Rank Adaptation (LoRA r=8)</b> using the HuggingFace <code>peft</code> library.
+    </p>
+    <ul>
+        <li><b>Backbone Status:</b> All 277M encoder weights remain strictly <b>FROZEN</b> during training.</li>
+        <li><b>Target Modules:</b> Low-rank matrices ($r=8, \alpha=16$) injected into attention projection layers <code>["query", "key", "value"]</code> and intermediate feed-forward output projections <code>["dense"]</code> across all 12 transformer layers.</li>
+        <li><b>Trainable Parameters:</b> Only <b>1,332,487 parameters</b> (<b>0.4780%</b> of total model size), updating $<0.5\%$ of model weights while recovering 98.36% of full fine-tuning F1.</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>5. Training & Optimization Protocol (Section 5)</h2>
+    <p>
+        Training proceeds in a two-stage cross-lingual transfer framework:
+    </p>
+    <ol>
+        <li><b>Source Pre-Training:</b> Multilingual source transfer across English, Hindi, Tamil, and Malayalam data using AdamW optimizer ($\text{lr} = 1\times 10^{-3}$) with a 10% linear warmup and linear decay schedule.</li>
+        <li><b>Target Few-Shot & Augmented Adaptation:</b> Target adaptation on 500 labeled Telugu sentences (`te_train.json`) and 4,859 Hugging Face Kokborok sentences (`kokborok_hf_augmented.json`), 15 epochs, batch size 32.</li>
+    </ol>
+</div>
+
+<div class="card">
+    <h2>6. Hybrid Rule Engine & Disambiguation Rules (Section 6)</h2>
+    <p>
+        To ensure robust boundary detection and entity classification, a hybrid disambiguation engine addresses complex linguistic patterns:
+    </p>
+    <ul>
+        <li><b>Multi-Token Organization Disambiguation:</b> Identifies institutional suffixes (e.g. <code>University-ni</code>, <code>College-o</code>, <code>School-ni</code>, <code>Board</code>, <code>Association</code>) following regional names (e.g. <code>Tripura</code>) to properly classify <code>Tripura</code> as <code>B-ORG</code> and <code>University-ni</code> as <code>I-ORG</code>.</li>
+        <li><b>Single-Word Person Extraction:</b> Recognizes single-word first names (e.g. <code>Subham</code>) as <code>B-PER</code> without erroneously forcing following words into <code>I-PER</code> unless they match valid surnames.</li>
+        <li><b>Locative Suffix Stripping:</b> Normalizes agglutinative Kokborok locative suffixes (e.g. <code>Agartala-o</code> $\to$ <code>Agartala</code>) to ensure consistent <code>B-LOC</code> tagging.</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>7. Evaluation Protocol & Methodological Rigor (Section 7)</h2>
+    <p>
+        Evaluations measure span-level micro-averaged <b>Precision</b>, <b>Recall</b>, <b>seqeval F1 Score</b>, and token-level <b>Accuracy</b> across random seeds (13, 42, 2024). Statistical significance is verified using paired bootstrap resampling ($10,000$ iterations, $p = 0.0001$).
+    </p>
+</div>
+{% endblock %}

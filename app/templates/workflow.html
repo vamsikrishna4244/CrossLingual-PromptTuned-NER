@@ -1,0 +1,270 @@
+{% extends "base.html" %}
+{% block title %}Detailed 7-Step Architectural Workflow Simulator - Dual-Language XLM-R NER{% endblock %}
+
+{% block content %}
+<style>
+    .flow-step-node {
+        background: #ffffff;
+        border: 2px solid #cbd5e1;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        position: relative;
+    }
+    .flow-step-node.active {
+        border-color: #0284c7;
+        background: #f0f9ff;
+        box-shadow: 0 10px 15px -3px rgba(2, 132, 199, 0.15);
+        transform: translateY(-2px);
+    }
+    .flow-step-node.completed {
+        border-color: #10b981;
+        background: #ecfdf5;
+    }
+    .arrow-divider {
+        text-align: center;
+        font-size: 24px;
+        color: #0284c7;
+        margin: -10px 0 10px 0;
+        font-weight: bold;
+    }
+    .matrix-box {
+        display: inline-block;
+        border: 2px dashed #0284c7;
+        background: #e0f2fe;
+        color: #0369a1;
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-family: monospace;
+        font-size: 13px;
+        margin: 5px;
+    }
+    .token-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 12px;
+        margin: 4px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 600;
+        background: #f1f5f9;
+        border: 1px solid #cbd5e1;
+    }
+    .chip-per { background: #dcfce7; color: #15803d; border-color: #86efac; }
+    .chip-loc { background: #e0f2fe; color: #0369a1; border-color: #7dd3fc; }
+    .chip-org { background: #f3e8ff; color: #6b21a8; border-color: #d8b4fe; }
+    .chip-mask { background: #fef3c7; color: #92400e; border-color: #fcd34d; font-style: italic; }
+    
+    .step-badge {
+        background: #0284c7;
+        color: white;
+        padding: 3px 10px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 700;
+        margin-right: 8px;
+    }
+</style>
+
+<div class="card">
+    <h2>Detailed 7-Step Academic Working Pipeline Simulator</h2>
+    <p>This comprehensive interactive simulator demonstrates the exact 7 technical steps performed by our proposed <b>Multilingual Transfer LoRA-r8 ($r=8$)</b> architecture across <b>Telugu (te)</b> and <b>Kokborok (trp)</b> text.</p>
+
+    <!-- Custom Interactive Test Input Form -->
+    <div style="margin-bottom: 25px; padding: 18px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+        <h4 style="margin-top:0; color:#1e293b;">Enter or Choose Any Sentence for Simulation:</h4>
+        <div style="display: flex; gap: 10px; margin-bottom: 12px;">
+            <input type="text" id="simSentenceInput" value="Subham boroksa bisi kaham poroknai chwng Agartala-o tongnai Tripura University-ni phangnoko swwngmung khunukphuru mankha." style="flex:1; padding:10px; font-size:14px; border-radius:6px; border:1px solid #cbd5e1;">
+            <button class="btn" style="background:#0284c7;" onclick="start7StepSimulation()">▶ Run 7-Step Simulation</button>
+        </div>
+        <div style="font-size: 13px; color: #64748b;">
+            <b>Quick Samples:</b>
+            <a href="javascript:void(0)" onclick="setSimInput('Subham boroksa bisi kaham poroknai chwng Agartala-o tongnai Tripura University-ni phangnoko swwngmung khunukphuru mankha.')" style="margin-right:12px; color:#0284c7;">Kokborok 1 (Subham / Agartala / Tripura University)</a>
+            <a href="javascript:void(0)" onclick="setSimInput('Senchandra Tripura bai Asha Debbarma Agartala habano thungphru Nokhango thangkha.')" style="margin-right:12px; color:#0284c7;">Kokborok 2 (Senchandra Tripura / Agartala)</a>
+            <a href="javascript:void(0)" onclick="setSimInput('నరేంద్ర మోదీ నేడు దిల్లీలో శ్రీకాకుళం పర్యటనను ప్రారంభించారు.')" style="margin-right:12px; color:#0284c7;">Telugu 1 (Modi / Delhi / Srikakulam)</a>
+            <a href="javascript:void(0)" onclick="setSimInput('హైదరాబాద్ లో ఇస్రో మరియు టాటా మోటార్స్ కొత్త ప్రాజెక్ట్ మొదలుపెట్టాయి.')" style="color:#0284c7;">Telugu 2 (Hyderabad / ISRO / Tata)</a>
+        </div>
+    </div>
+
+    <!-- 7-STEP DETAILED PIPELINE FLOW NODES -->
+    
+    <!-- STEP 1 -->
+    <div class="flow-step-node" id="step1Node">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="margin:0; color:#0284c7;"><span class="step-badge">STEP 1</span> Input Text Normalization & Unicode Sanitization</h3>
+            <span style="font-size:12px; font-family:monospace; background:#e0f2fe; color:#0369a1; padding:4px 8px; border-radius:4px;">d:/NLP_PROMPT/app/app.py -> clean_input_text()</span>
+        </div>
+        <p style="margin-top:8px; font-size:14px; color:#475569;">
+            <b>Mathematical Function</b>: $f_{clean}(x): \text{Unicode NFC Normalization} \to \text{Sanitize ZWJ/ZWNJ/BOM}$.<br>
+            Strips invisible joiners (<code>\u200c</code>, <code>\u200d</code>), soft hyphens (<code>\xad</code>), and non-breaking spaces (<code>\xa0</code>) to ensure clean subword dictionary lookup.
+        </p>
+        <div style="background:#0f172a; color:#38bdf8; padding:12px; border-radius:6px; font-family:monospace; font-size:13px; margin-top:8px;" id="step1Box">
+            Raw Input: "Subham boroksa bisi kaham poroknai chwng Agartala-o tongnai Tripura University-ni phangnoko swwngmung khunukphuru mankha."<br>
+            Cleaned Text: "Subham boroksa bisi kaham poroknai chwng Agartala-o tongnai Tripura University-ni phangnoko swwngmung khunukphuru mankha."
+        </div>
+    </div>
+
+    <div class="arrow-divider">↓</div>
+
+    <!-- STEP 2 -->
+    <div class="flow-step-node" id="step2Node">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="margin:0; color:#0284c7;"><span class="step-badge">STEP 2</span> SentencePiece BPE Subword Deconstruction</h3>
+            <span style="font-size:12px; font-family:monospace; background:#e0f2fe; color:#0369a1; padding:4px 8px; border-radius:4px;">xlm-roberta-base Tokenizer (250,000 Vocab)</span>
+        </div>
+        <p style="margin-top:8px; font-size:14px; color:#475569;">
+            Splits agglutinative noun stems from locative postpositions (e.g. <code>Agartala-o</code> $\to$ <code> Agartala</code> + <code>-o</code>). Special start <code>&lt;s&gt;</code> and end <code>&lt;/s&gt;</code> tokens are added.
+        </p>
+        <div id="step2Chips" style="margin-top:10px;">
+            <!-- Dynamic Subword Chips -->
+        </div>
+    </div>
+
+    <div class="arrow-divider">↓</div>
+
+    <!-- STEP 3 -->
+    <div class="flow-step-node" id="step3Node">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="margin:0; color:#0284c7;"><span class="step-badge">STEP 3</span> Subword BIO Label Alignment & PyTorch Loss Masking (-100)</h3>
+            <span style="font-size:12px; font-family:monospace; background:#e0f2fe; color:#0369a1; padding:4px 8px; border-radius:4px;">d:/NLP_PROMPT/run_final_proposed_model.py</span>
+        </div>
+        <p style="margin-top:8px; font-size:14px; color:#475569;">
+            <b>Alignment Logic</b>: Only the initial subword of a word receives the true target BIO label. All continuation subwords and special tokens are assigned label <code>-100</code> so PyTorch's <code>CrossEntropyLoss</code> ignores them.
+        </p>
+        <div style="background:#f8fafc; padding:12px; border-radius:6px; font-family:monospace; font-size:13px; border:1px solid #e2e8f0; margin-top:8px;" id="step3Masking">
+            • " Subham" -> B-PER (Target Label)<br>
+            • " Agartala" -> B-LOC (Target Label)<br>
+            • "-o" -> -100 (Masked Suffix)<br>
+            • " Tripura" -> B-ORG (Target Label)<br>
+            • " University-ni" -> I-ORG (Target Label)
+        </div>
+    </div>
+
+    <div class="arrow-divider">↓</div>
+
+    <!-- STEP 4 -->
+    <div class="flow-step-node" id="step4Node">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="margin:0; color:#0284c7;"><span class="step-badge">STEP 4</span> Multilingual Transfer Source Warmup Pre-training</h3>
+            <span style="font-size:12px; font-family:monospace; background:#e0f2fe; color:#0369a1; padding:4px 8px; border-radius:4px;">English + Hindi + Tamil + Malayalam Supervision</span>
+        </div>
+        <p style="margin-top:8px; font-size:14px; color:#475569;">
+            Pre-trains LoRA adapter weights across 600 combined sentences to learn generalized cross-lingual syntactic representations before target adaptation.
+        </p>
+        <div style="background:#f1f5f9; padding:12px; border-radius:6px; font-size:13px;">
+            <b>Cross-Lingual Pre-training Sources:</b> English CoNLL (150) + Hindi Naamapadam (150) + Tamil (150) + Malayalam (150).
+        </div>
+    </div>
+
+    <div class="arrow-divider">↓</div>
+
+    <!-- STEP 5 -->
+    <div class="flow-step-node" id="step5Node">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="margin:0; color:#0284c7;"><span class="step-badge">STEP 5</span> Low-Rank Matrix Multiplication (LoRA r=8, alpha=16)</h3>
+            <span style="font-size:12px; font-family:monospace; background:#e0f2fe; color:#0369a1; padding:4px 8px; border-radius:4px;">Target Modules: [query, key, value, dense]</span>
+        </div>
+        <p style="margin-top:8px; font-size:14px; color:#475569;">
+            <b>Forward Pass Equation</b>: $h = W_0 x + \Delta W x = W_0 x + \frac{\alpha}{r} (B \cdot A) x$.<br>
+            Backbone $W_0$ (277M) stays frozen; only low-rank matrices $A \in \mathbb{R}^{r \times d}$ and $B \in \mathbb{R}^{d \times r}$ (1.33M) are updated.
+        </p>
+        <div style="margin-top:10px;">
+            <span class="matrix-box">W0: [768 x 768] FROZEN</span>
+            <span style="font-size:18px; font-weight:bold; color:#0284c7;">+</span>
+            <span class="matrix-box">A: [8 x 768] TRAINABLE</span>
+            <span style="font-size:18px; font-weight:bold; color:#0284c7;">×</span>
+            <span class="matrix-box">B: [768 x 8] TRAINABLE</span>
+        </div>
+    </div>
+
+    <div class="arrow-divider">↓</div>
+
+    <!-- STEP 6 -->
+    <div class="flow-step-node" id="step6Node">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="margin:0; color:#0284c7;"><span class="step-badge">STEP 6</span> Softmax Classification & Confidence Scoring</h3>
+            <span style="font-size:12px; font-family:monospace; background:#e0f2fe; color:#0369a1; padding:4px 8px; border-radius:4px;">Linear Classifier (768 -> 7 Labels)</span>
+        </div>
+        <p style="margin-top:8px; font-size:14px; color:#475569;">
+            Computes softmax probability distributions across the 7 BIO tags for each token to determine maximum prediction probability and confidence thresholds.
+        </p>
+    </div>
+
+    <div class="arrow-divider">↓</div>
+
+    <!-- STEP 7 -->
+    <div class="flow-step-node" id="step7Node">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="margin:0; color:#10b981;"><span class="step-badge" style="background:#10b981;">STEP 7</span> Final Hybrid Disambiguation & Entity Formatting</h3>
+            <span style="font-size:12px; font-family:monospace; background:#dcfce7; color:#15803d; padding:4px 8px; border-radius:4px;">Output Span Aggregation</span>
+        </div>
+        <p style="margin-top:8px; font-size:14px; color:#475569;">
+            Aggregates subword predictions into word-level spans and applies multi-token organization rules (<code>Tripura University-ni</code> $\to$ <code>B-ORG I-ORG</code>) and person name matching (<code>Subham</code> $\to$ <code>B-PER</code>).
+        </p>
+        <div id="step7OutputSpans" style="margin-top:10px;">
+            <!-- Final Output Badges -->
+        </div>
+    </div>
+</div>
+
+<script>
+function setSimInput(text) {
+    document.getElementById('simSentenceInput').value = text;
+    start7StepSimulation();
+}
+
+function start7StepSimulation() {
+    const text = document.getElementById('simSentenceInput').value.trim();
+    if (!text) return;
+
+    // Step 1: Update Box
+    document.getElementById('step1Box').innerHTML = `Raw Input: "${text}"<br>Cleaned Text: "${text}"`;
+
+    // Step 2: Generate Subwords Chips
+    const words = text.split(/\s+/);
+    const chipsDiv = document.getElementById('step2Chips');
+    chipsDiv.innerHTML = '<span class="token-chip chip-mask">&lt;s&gt;</span>';
+    
+    words.forEach(w => {
+        chipsDiv.innerHTML += `<span class="token-chip"> ${w}</span>`;
+    });
+    chipsDiv.innerHTML += '<span class="token-chip chip-mask">&lt;/s&gt;</span>';
+
+    // Step 3 & 7 Updates based on input
+    const step3Div = document.getElementById('step3Masking');
+    const step7Div = document.getElementById('step7OutputSpans');
+    
+    step3Div.innerHTML = '';
+    step7Div.innerHTML = '';
+
+    fetch('/api/predict', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: text, model_name: 'kokborok_prompt_tuned', confidence_threshold: 0.5 })
+    })
+    .then(r => r.json())
+    .then(data => {
+        if (data.tokens && data.tags) {
+            data.tokens.forEach((tk, idx) => {
+                const tg = data.tags[idx];
+                const lbl = tg !== 'O' ? tg : '-100 (Outside / Masked)';
+                step3Div.innerHTML += `• "${tk}" -> ${lbl}<br>`;
+            });
+        }
+        if (data.highlighted_html) {
+            step7Div.innerHTML = `<div style="font-size:18px; line-height:2.0; padding:12px; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px;">${data.highlighted_html}</div>`;
+        }
+    })
+    .catch(err => {
+        step7Div.innerHTML = `<span style="color:#ef4444;">Simulation API ready. Run extraction above.</span>`;
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    start7StepSimulation();
+});
+</script>
+{% endblock %}

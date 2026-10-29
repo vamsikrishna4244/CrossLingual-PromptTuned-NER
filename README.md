@@ -27,7 +27,7 @@ A Parameter-Efficient Fine-Tuning (**PEFT**) framework using Low-Rank Adaptation
   - [2. Launch the Interactive Web Application](#2-launch-the-interactive-web-application)
   - [3. Run Inference & Verification](#3-run-inference--verification)
   - [4. Generate PDF Evaluation Report](#4-generate-pdf-evaluation-report)
-- [Datasets & Citation](#-datasets--citation)
+- [Datasets Used](#-datasets-used)
 
 ---
 
@@ -282,26 +282,11 @@ python generate_pdf_report.py
 
 ---
 
-## 📚 Datasets & Citation
+## 📚 Datasets Used
 
-### Datasets Used
 1. **AI4Bharat Naamapadam**: Benchmark dataset for Indic Named Entity Recognition across 11 Indic languages ([Mhaske et al., 2022](https://github.com/AI4Bharat/naamapadam)).
 2. **CoNLL-2003 English NER**: Standard multilingual cross-lingual source transfer anchor ([Tjong Kim Sang & De Meulder, 2003](https://www.clips.uantwerpen.be/conll2003/ner/)).
 3. **Kokborok Hugging Face Corpora**: Ingested and aligned from `agnivamaiti/kokborok-qa` and `sdmy/kokborok` paired with news PDF sources.
-
-### BibTeX Citation
-
-If you use this codebase or methodology in your research, please cite:
-
-```bibtex
-@article{prompt_tuned_indic_ner_2026,
-  title={Dual-Language Parameter-Efficient Cross-Lingual Prompt Tuning for Low-Resource Named Entity Recognition in Indian Languages},
-  author={NLP Prompt Research Team},
-  journal={Antigravity Research Archive},
-  year={2026},
-  note={Target languages: Telugu (te) and Kokborok (trp) via XLM-RoBERTa LoRA-r8}
-}
-```
 
 ---
 
